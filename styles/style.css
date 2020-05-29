@@ -695,15 +695,20 @@ body {
     position: absolute;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     width: 1142px;
     height: 731px;
-    background-color: #7A7A7A;
+    background-color: #FFFFFF;
 }
 .mainBannTop{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 618px;
+    color:#EF5B70;
+    font-size: 24px;
+    border-bottom: 2px solid #E7EBE7;
 }
 .mainBannTop h2{
     color: #4D4D4D;
@@ -735,12 +740,21 @@ body {
     border-bottom: 2px solid #F16D7F;
 }
 .mainBannTop span{
-    color: #B9B9B9;
+    color: #4D4D4D;
     font-size: 14px;
     text-transform: uppercase;
+    font-weight: 700;
+    margin: 22px;
 }
+
 .mainBannTop span mark{
     color: #BDBABD;
-    text-decoration: none;
-    text-transform: none;
+    background-color: #FFFFFF;
+}
+.mbFormInput{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60px;
+    width: 540px;
 }
