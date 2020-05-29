@@ -694,11 +694,12 @@ body {
     top:-87px;
     position: absolute;
     align-items: center;
-    justify-content: center;
+    padding-top: 75px;
     flex-direction: column;
     width: 1142px;
     height: 731px;
     background-color: #FFFFFF;
+    border: 1px solid #EAEAEA;
 }
 .mainBannTop{
     display: flex;
@@ -709,6 +710,7 @@ body {
     color:#EF5B70;
     font-size: 24px;
     border-bottom: 2px solid #E7EBE7;
+        padding-bottom: 40px;
 }
 .mainBannTop h2{
     color: #4D4D4D;
@@ -726,6 +728,7 @@ body {
     text-align: center;
     color: #5E5E5E;
     font-size: 14px;
+    margin-top: 55px;
 }
 .rowsBannTop{
     display: flex;
@@ -733,7 +736,7 @@ body {
 }
 .rowBann{
     width: 45px;
-    border-bottom: 2px solid  #FFFFFF;
+    border-bottom: 2px solid  #E7EBE7;
 }
 .rowActiveBann{
         width: 60px;
@@ -746,15 +749,61 @@ body {
     font-weight: 700;
     margin: 22px;
 }
+.material{
+    margin-bottom: 35px
+}
 
 .mainBannTop span mark{
     color: #BDBABD;
     background-color: #FFFFFF;
 }
+.mainBannForm{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.mainBannForm button{
+    border: 1px solid #EF5B70;
+    width: 538px;
+    height: 36px;
+        background-color: #FFFFFF;
+    color: #EF5B70;
+    font-size: 16px;
+    margin-top: 27px;
+}
+.mainBannForm button:hover{
+    background-color: #EF5B70;
+    color: #FFFFFF;
+}
 .mbFormInput{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 60px;
+    align-items: center;
+    height: 90px;
     width: 540px;
+    margin-top: 60px
+}
+.mbFormInput lable{
+    font-size: 14px;
+    color: #2F2F2F;
+}
+.mbFormInput input{
+    width: 145px;
+    height: 35px;
+    margin-top: 20px;
+    padding-left: 15px;
+}
+.productSinglePage{
+    height: auto;
+}
+.itemsHSingePage{
+    text-transform: uppercase;
+}
+.imgProductSingle{
+    width: auto;
+    background-color: #EFEFEF;
+}
+.imgProductSingle:{
+
 }
