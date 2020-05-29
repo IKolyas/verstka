@@ -691,12 +691,56 @@ body {
 }
 .mainBann{
     display:flex;
+    top:-87px;
     position: absolute;
     align-items: center;
     justify-content: center;
-
-    top:-87px;
     width: 1142px;
     height: 731px;
     background-color: #7A7A7A;
+}
+.mainBannTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainBannTop h2{
+    color: #4D4D4D;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.mainBannTop h2:first-child{
+    color: #F16D7F;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.mainBannTop p{
+    width: 618px;
+    text-align: center;
+    color: #5E5E5E;
+    font-size: 14px;
+}
+.rowsBannTop{
+    display: flex;
+    justify-content: center;
+}
+.rowBann{
+    width: 45px;
+    border-bottom: 2px solid  #FFFFFF;
+}
+.rowActiveBann{
+        width: 60px;
+    border-bottom: 2px solid #F16D7F;
+}
+.mainBannTop span{
+    color: #B9B9B9;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.mainBannTop span mark{
+    color: #BDBABD;
+    text-decoration: none;
+    text-transform: none;
 }
