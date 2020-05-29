@@ -53,13 +53,13 @@
             <form class="mainBannForm">
                 <div class="mbFormInput">
                     <label>CHOOSE COLOR</label>
-                    <input type="text" list="colorlist" placeholder="Red">
+                    <input type="text" list="colorlist" placeholder="Red" required pattern="^[a-zA-Z]+$">
                     <datalist id="colorlist">
                         <option value="Green">
                             <option value="Blue">
                     </datalist>
                     <label>CHOOSE SIZE</label>
-                    <input type="text" list="size" placeholder="XXL">
+                    <input type="text" list="size" placeholder="XXL" required pattern="^[a-zA-Z]+$">
                     <datalist id="size">
                         <option value="M">
                             <option value="L">
@@ -67,7 +67,7 @@
                                     <option value="XXL">
                     </datalist>
                     <label>QUANTITY</label>
-                    <input type="text" list="qantity" placeholder="2">
+                    <input type="text" list="qantity" placeholder="2" required pattern="^[ 0-9]+$">
                     <datalist id="qantity">
                         <option value="1">
                             <option value="2">
