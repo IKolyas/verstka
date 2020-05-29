@@ -320,7 +320,8 @@ body {
 .browseBtn {
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
+    ;
     width: 215px;
     height: 50px;
     justify-content: space-around;
@@ -628,11 +629,12 @@ body {
     text-align: center;
     font-weight: 300;
 }
-.newsNavlink:hover{
-    
-        color: rgb(241, 109, 127);
+
+.newsNavlink:hover {
+    color: rgb(241, 109, 127);
     font-weight: 700;
 }
+
 .newsNavLinkActive {
     text-decoration: none;
     text-transform: uppercase;
@@ -674,14 +676,15 @@ body {
     color: #FFFFFF;
 }
 
-.rowsImage img{
+.rowsImage img {
     width: 597px;
     height: 724px;
     display: block;
     object-position: center center;
     object-fit: cover;
 }
-.mainProduct{
+
+.mainProduct {
     position: relative;
     display: flex;
     align-items: center;
@@ -689,9 +692,10 @@ body {
     height: 850px;
     width: 100%;
 }
-.mainBann{
-    display:flex;
-    top:-87px;
+
+.mainBann {
+    display: flex;
+    top: -87px;
     position: absolute;
     align-items: center;
     padding-top: 75px;
@@ -701,81 +705,93 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #EAEAEA;
 }
-.mainBannTop{
+
+.mainBannTop {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 618px;
-    color:#EF5B70;
+    color: #EF5B70;
     font-size: 24px;
     border-bottom: 2px solid #E7EBE7;
-        padding-bottom: 40px;
+    padding-bottom: 40px;
 }
-.mainBannTop h2{
+
+.mainBannTop h2 {
     color: #4D4D4D;
     font-size: 18px;
     text-transform: uppercase;
 }
-.mainBannTop h2:first-child{
+
+.mainBannTop h2:first-child {
     color: #F16D7F;
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.mainBannTop p{
+.mainBannTop p {
     width: 618px;
     text-align: center;
     color: #5E5E5E;
     font-size: 14px;
     margin-top: 55px;
 }
-.rowsBannTop{
+
+.rowsBannTop {
     display: flex;
     justify-content: center;
 }
-.rowBann{
+
+.rowBann {
     width: 45px;
-    border-bottom: 2px solid  #E7EBE7;
+    border-bottom: 2px solid #E7EBE7;
 }
-.rowActiveBann{
-        width: 60px;
+
+.rowActiveBann {
+    width: 60px;
     border-bottom: 2px solid #F16D7F;
 }
-.mainBannTop span{
+
+.mainBannTop span {
     color: #4D4D4D;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 22px;
 }
-.material{
+
+.material {
     margin-bottom: 35px
 }
 
-.mainBannTop span mark{
+.mainBannTop span mark {
     color: #BDBABD;
     background-color: #FFFFFF;
 }
-.mainBannForm{
+
+.mainBannForm {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.mainBannForm button{
+
+.mainBannForm button {
     border: 1px solid #EF5B70;
     width: 538px;
     height: 36px;
-        background-color: #FFFFFF;
+    background-color: #FFFFFF;
     color: #EF5B70;
     font-size: 16px;
     margin-top: 27px;
 }
-.mainBannForm button:hover{
+
+.mainBannForm button:hover {
     background-color: #EF5B70;
     color: #FFFFFF;
 }
-.mbFormInput{
+
+.mbFormInput {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -784,26 +800,28 @@ body {
     width: 540px;
     margin-top: 60px
 }
-.mbFormInput lable{
+
+.mbFormInput lable {
     font-size: 14px;
     color: #2F2F2F;
 }
-.mbFormInput input{
+
+.mbFormInput input {
     width: 145px;
     height: 35px;
     margin-top: 20px;
     padding-left: 15px;
 }
-.productSinglePage{
+
+.productSinglePage {
     height: auto;
 }
-.itemsHSingePage{
+
+.itemsHSingePage {
     text-transform: uppercase;
 }
-.imgProductSingle{
+
+.imgProductSingle {
     width: auto;
     background-color: #EFEFEF;
-}
-.imgProductSingle:{
-
 }
