@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>shoppingCart</title>
+</head>
+
+<body>
+    <header class="container-lg">
+        <div class="d-flex align-items-center mb-4">
+            <div class="logo col-lg-2 col-md-3 d-flex justify-content-center pl-5">Bran<span>d</span></div>
+            <form class="search d-none d-md-flex col-lg-5 col-md-5 justify-content-between pl-0 pr-0 align-items-center rounded ">
+                <div class="searchBrowse pl-auto d-flex justify-content-center align-items-center">Browse <i class="fas fa-caret-down ml-1"></i></div>
+                <label class="pt-2">
+                    <input list="searchList" name="search" type="text" placeholder="Search for Item..."> </label>
+                <datalist id="searchList">
+                    <option value="for man">
+                        <option value="for woman">
+                            <option value="for child">
+                </datalist>
+                <button><i class="fas fa-search"></i></button>
+            </form>
+            <div class="rTop d-flex col-lg-3 col-md-5 ml-4 ml-sm-auto align-items-end"> <img class="headerCart ml-5" src="img/cart.png" alt="headerCart">
+                <button class="accountBtn d-flex ml-4 align-items-center justify-content-center rounded">My Account<i class="fas fa-caret-down ml-1"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="headerLine"></div>
+    <nav class="container-lg">
+        <div class="topNav col-12 d-flex flex-column flex-md-row justify-content-center align-items-center"> <a href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a href="#">Accoseriese</a> <a href="#">Featured</a> <a href="#">Hot Deals</a> </div>
+    </nav>
+    <div class="newsProd">
+        <div class="container-xl">
+            <div class="news container-xl row d-flex justify-content-between  align-items-center pt-5 pb-5">
+                <div class="newsAr">
+                    <h2>news arrivals</h2></div>
+                <nav class="newsNav"> <a class="newsNavlink" href="#">Home</a> / <a class="newsNavlink" href="#">Men</a> / <a class="newsNavlink newsNavLinkActive" href="#">news arrivals</a></nav>
+            </div>
+        </div>
+    </div>
+    <main class="container-xl">
+        <div class="prodHeaders row col-12 d-flex justify-content-between mt-5 mb-3 text-uppercase">
+            <div class="row col-5"> <span class="">product detals</span></div>
+            <div class="row col-7"> <span class="col-3 text-center">unite price</span> <span class="col-3 text-center d-none d-md-flex">Quantity</span> <span class="col-2 pl-0 text-center d-none d-md-flex">shipping</span> <span class="col-2 justify-content-center d-none d-md-flex">subtotal</span> <span class="col-2 justify-content-center d-none d-md-flex">action</span></div>
+        </div>
+        <div class="headerLine"></div>
+        <div class="prodHeaders row col-12 d-flex justify-content-between mt-4 mb-3 text-uppercase">
+            <div class="row col-5 img-responsive">
+                <div class="productDetals d-flex"><img src="img/Product%20Image@1X.jpeg" alt="layer">
+                    <div class="ProdDetText d-flex flex-column ml-3 text-capitalize ">
+                        <h3>Mango  People  T-shirt</h3> <span>Color: <mark>Red</mark></span> <span>Size: <mark>Xll</mark></span> </div>
+                </div>
+            </div>
+            <div class="row col-7 d-flex"> <span class="col-3 d-flex justify-content-center align-items-center">$150</span>
+                <div class="ProdHeadInp col-3 d-flex justify-content-center align-items-center">
+                    <input type="text" list="qantity" placeholder="2" required pattern="^[ 0-9]+$"> </div> <span class="col-2 pl-0 d-flex justify-content-center align-items-center">free</span> <span class="col-2 d-flex justify-content-center align-items-center">$300</span> <span class="col-2 d-flex justify-content-center align-items-center"><i class="fas fa-times-circle"></i></span></div>
+        </div>
+        <div class="headerLine"></div>
+        <div class="prodHeaders row col-12 d-flex justify-content-between mt-4 mb-3 text-uppercase">
+            <div class="row col-5 img-responsive">
+                <div class="productDetals d-flex"><img src="img/Product%20Image@1X.jpeg" alt="layer">
+                    <div class="ProdDetText d-flex flex-column ml-3 text-capitalize ">
+                        <h3>Mango  People  T-shirt</h3> <span>Color: <mark>Red</mark></span> <span>Size: <mark>Xll</mark></span> </div>
+                </div>
+            </div>
+            <div class="row col-7 d-flex"> <span class="col-3 d-flex justify-content-center align-items-center">$150</span>
+                <div class="ProdHeadInp col-3 d-flex justify-content-center align-items-center">
+                    <input type="text" list="qantity" placeholder="2" required pattern="^[ 0-9]+$"> </div> <span class="col-2 pl-0 d-flex justify-content-center align-items-center">free</span> <span class="col-2 d-flex justify-content-center align-items-center">$300</span> <span class="col-2 d-flex justify-content-center align-items-center"><i class="fas fa-times-circle"></i></span></div>
+        </div>
+        <div class="headerLine"></div>
+        <div class="prodHeaders row col-12 d-flex justify-content-between mt-4 mb-3 text-uppercase">
+            <div class="row col-5">
+                <div class="productDetals d-flex"><img src="img/Product%20Image@2X.jpeg" alt="layer">
+                    <div class="ProdDetText d-flex flex-column ml-3 text-capitalize ">
+                        <h3>Mango  People  T-shirt</h3> <span>Color: <mark>Red</mark></span> <span>Size: <mark>Xll</mark></span> </div>
+                </div>
+            </div>
+            <div class="row col-7 d-flex"> <span class="col-3 d-flex justify-content-center align-items-center">$150</span>
+                <div class="ProdHeadInp col-3 d-flex justify-content-center align-items-center">
+                    <input type="text" list="count" placeholder="2" required pattern="^[ 0-9]+$"> </div> <span class="col-2 pl-0 d-flex justify-content-center align-items-center">free</span> <span class="col-2 d-flex justify-content-center align-items-center">$300</span> <span class="col-2 d-flex justify-content-center align-items-center"><i class="fas fa-times-circle"></i></span></div>
+        </div>
+        <div class="headerLine"></div>
+        <div class="container-xl row d-flex justify-content-between mt-5">
+            <div class="ccShoppingBut">
+                <button type="button">cLEAR SHOPPING CART</button>
+            </div>
+            <div class="ccShoppingBut">
+                <button type="button">cONTINUE sHOPPING</button>
+            </div>
+        </div>
+    </main>
+    <div class="container-xl">
+        <div class="row FormUser d-flex flex-column flex-lg-row  justify-content-between mt-5 pt-3 pb-5">
+            <div class="FormUserShAdress col-sm-12 col-lg-4 d-flex justify-content-center mb-3">
+                <form action="" class="d-flex flex-column">
+                    <lable>Shipping Adress</lable>
+                    <input class="pl-3" type="text" list="city" name="city" placeholder="Bangladesh" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$">
+                    <datalist id="city">
+                        <option value="city">
+                            <option value="city">
+                                <option value="city">
+                    </datalist>
+                    <input type="text" class="pl-3" placeholder="State" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$">
+                    <input type="text" class="pl-3" placeholder="Postcode / Zip" pattern="^[a-zA-Z0-9]+$">
+                    <button>get a quote</button>
+                </form>
+            </div>
+            <div class="FormUsercoupondiscount col-sm-12 col-lg-4 d-flex justify-content-center">
+                <form method="post" class="d-flex flex-column justify-content-top mb-3">
+                    <lable>coupon discount</lable> <span class="mt-4">Enter your coupon code if you have one</span>
+                    <input type="text" class="pl-3" placeholder="State" pattern="^[a-zA-Z0-9]+$">
+                    <button>Apply coupon</button>
+                </form>
+            </div>
+            <div class="FormUserGT col-sm-12 col-lg-4 d-flex p-4">
+                <form action="" class="d-flex flex-column align-items-lg-end align-items-sm-center "> <span class="pb-1">SUB TOTAL $900</span>
+                    <lable>GRAND TOTAL<span> $900</span></lable>
+                    <div class="headerLine mt-4"></div>
+                    <button>proceed to checkout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="futFon mt-4">
+        <div class="container-xl">
+            <div class="futFonInfo row col-12 d-flex flex-column flex-lg-row align-items-center justify-content-center pt-md-5 pt-lg-0">
+                <div class="leftFutFon col-6 d-sm-none d-lg-block">
+                    <div class="photoForm  d-flex"><img src="img/Layerwomen.jpeg" alt="photo">
+                        <div class="photoFormText ml-4">
+                            <p><i>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</i></p><span>Bin Burhan</span>
+                            <br>Dhaka, Bd </div>
+                    </div>
+                    <div class="rowsBut d-flex mt-4 ml-5 pl-5">
+                        <div class="rowBut m-1"></div>
+                        <div class="rowBut rowActive m-1"></div>
+                        <div class="rowBut m-1"></div>
+                    </div>
+                </div>
+                <div class="RiFutFon col-lg-6 col-sm-12 d-flex justify-content-center align-items-center pl-lg-5 pt-lg-0">
+                    <div class="formMail d-flex flex-column align-items-center">
+                        <h2>Subscribe</h2>
+                        <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form class="inpForm">
+                            <input name="Subscribe" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Enter Your Email">
+                            <button class="accountBtn subsBTN">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xl d-none d-lg-block mt-5 pt-5 pb-5">
+        <div class="footerBut row d-flex justify-content-between">
+            <div class="row d-flex col-5">
+                <div class="blockBrand">
+                    <div class="logo col-6 pl-5 d-flex justify-content-center pb-3">Bran<span>d</span></div>
+                    <div>
+                        <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
+                        <p> Efficiently plagiarize 24/365 action items and focused infomediaries Distinctively seize superior initiatives for wireless technologies.
+                            <br>Dynamically optimize. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex col-7">
+                <nav class="blockCompany col-4 d-flex flex-column">
+                    <h2>COMPANY</h2> <a href="#">Home</a> <a href="#">Shop</a> <a href="#">About</a> <a href="#">How it Works</a> <a href="#">Contact</a> </nav>
+                <nav class="blockInformation col-4 d-flex flex-column">
+                    <h2>INFORMATION</h2> <a href="#">Tearms & Condition</a> <a href="#">Privacy Policy</a> <a href="#">How to Buy</a> <a href="#">How to Sell</a><a href="#">Promotion</a></nav>
+                <nav class="blockShop d-flex col-4 flex-column">
+                    <h2>SHOP CATEGORY</h2> <a href="#">Men</a> <a href="#">Women</a> <a href="#">Child</a> <a href="#">Apparel</a> <a href="#">Brows All</a> </nav>
+            </div>
+        </div>
+    </div>
+    <footer class="brandAllFooter d-flex align-items-center">
+        <div class="container-xl d-flex justify-content-between align-items-center">
+            <div class="brandAll">&copy; 2017 Brand All Rights Reserved.</div>
+            <div class="messenge d-flex col-3 justify-content-between"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a></div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
