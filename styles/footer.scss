@@ -1,0 +1,145 @@
+@import "variables";
+@import "media/mediaSM";
+.futFon {
+  height: 441px;
+  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%;
+
+  .futFonInfo {
+    height: 441px;
+  }
+
+  .photoForm {
+    font-size: 1rem;
+
+    p {
+      color: $mainTextColor;
+      font-size: 1rem;
+      text-align: justify;
+      font-weight: 400;
+    }
+
+    span {
+      color: $mainThemeColor;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    img {
+      width: 84px;
+      height: 84px;
+      border-radius: 45px;
+    }
+  }
+
+  .rowBut {
+    width: 40px;
+    border-bottom: 4px solid #D6D6D6;
+    &:hover{
+      border-bottom: 5px solid $mainThemeColor;
+    }
+  }
+
+  .rowActive {
+    border-bottom: 5px solid $mainThemeColor;
+  }
+}
+
+.formMail {
+  h2 {
+    color: $mainTextColor;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .inpForm {
+    input {
+      float: left;
+      width: 260px;
+      height: 47px;
+      border: none;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 45px;
+      padding-left: 20px;
+    }
+
+    .subsBTN {
+      height: 47px;
+      width: 105px;
+      background-color: #f16d7f;
+      color: #ffffff;
+      font-size: 0.9rem;
+      border: none;
+      border-top-right-radius: 45px;
+      border-bottom-right-radius: 45px;
+    }
+  }
+}
+
+
+
+.footerBut {
+  a {
+    text-decoration: none;
+    color: $mainTextColorP;
+    line-height: 2.5;
+
+    &:hover {
+      text-shadow: 2px 4px 6px rgba(150, 150, 150, 1);
+      text-decoration: none;
+      color: $mainTextColorP;
+    }
+  }
+
+  h2 {
+    color: $mainThemeColor;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .blockBrand {
+    text-align: justify;
+
+    p {
+      color: $mainTextColorP;
+    }
+  }
+}
+
+.brandAllFooter {
+  height: 80px;
+  background-color: #E6E6E6;
+
+  .brandAll {
+    color: #7A7A7A;
+  }
+
+  .messenge {
+    a {
+      color: $mainTextColor;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    i {
+      width: 32px;
+      height: 32px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        color: white;
+        text-decoration: none;
+        background: $mainThemeColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.logo {
+  background: url("../img/logo.png") no-repeat;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 4rem; }
+  .logo span {
+    color: #f16d7f;
+    font-weight: 700; }
+
+.search {
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  height: 40px; }
+  .search input {
+    border: none;
+    outline: none;
+    padding: 0 1rem; }
+  .search .searchBrowse {
+    padding: 1rem;
+    width: 88px;
+    height: 39px;
+    border-right: 0.1rem solid #e6e6e6;
+    background-color: #f8f8f8;
+    font-size: 1em;
+    color: #222222;
+    font-weight: 400; }
+    .search .searchBrowse i:first-child {
+      color: #838383; }
+  .search button {
+    border: none;
+    border-left: 1px solid #e6e6e6;
+    background: none;
+    padding: 12px; }
+    .search button i {
+      color: #a4a4a4; }
+
+
+.accountBtn {
+  width: 131px;
+  height: 39px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border: none; }
+
+.headerLine {
+  border-bottom: 1px solid #ececec;
+  width: 100%; }
+
+.topNav a {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 1.5rem; }
+.topNav a:hover {
+  text-shadow: 2px 4px 6px #969696;
+  text-decoration: none;
+  color: #222222;
+  border-bottom: 4px solid #f16d7f; }
+
+/*# sourceMappingURL=header.css.map */

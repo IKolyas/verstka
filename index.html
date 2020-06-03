@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>shoppingCart</title>
+</head>
+
+<body>
+<header class="container">
+    <div class="row d-flex align-items-center mb-4">
+        <div class="logo col-4 col-lg-2 d-flex justify-content-center pl-5">Bran<span>d</span></div>
+        <div class="input-group searchBrowse col-8 col-lg-5 pr-5">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Browse
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                   placeholder="Search for Item...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class=" rTop d-flex col-12 col-lg-3 ml-lg-auto justify-content-center justify-content-lg-start">
+            <a href="shoppingCart.html">
+                <svg class="bi bi-cart2" width="2.5em" height="2.5em" viewBox="0 0 16 16" fill="currentColor"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+            </a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger ml-4">My Account</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="headerLine"></div>
+<nav class="container">
+    <div class="topNav col-12 d-none d-md-flex flex-column flex-lg-row justify-content-center align-items-center"><a
+            href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a href="#">Accoseriese</a>
+        <a href="#">Featured</a> <a href="#">Hot Deals</a></div>
+    <div class="topNavMobile fixed-top d-block d-md-none">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-light p-4 d-flex flex-column justify-content-center">
+                <a href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a
+                    href="#">Accoseriese</a>
+                <a href="#">Featured</a> <a href="#">Hot Deals</a>
+            </div>
+        </div>
+        <nav class="navbar navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent"
+                    aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </div>
+</nav>
+<div class="topBanner d-flex">
+    <div class="container-lg topBannerContent d-flex justify-content-between align-items-center">
+        <div class="menLable pl-1">
+            <div class="menLabeltop">The brand</div>
+            <div class="menLabelbut">of luxerious <span>fashion</span></div>
+        </div>
+    </div>
+</div>
+<main class="container-lg offers">
+    <div class="row d-flex justify-content-between align-items-between">
+        <div class="row d-flex align-items-center justify-content-center col-sm-12 col-lg-6">
+            <div class="offer col-sm-12 col-lg-12 p-2"><img src="img/offer1.jpg" alt="">
+                <div>
+                    <div class="topOfferLabel">Hot deal</div>
+                    <div class="offerLabel">For men</div>
+                </div>
+            </div>
+            <div class="offer col-sm-12 col-lg-12"><img src="img/offer2.jpg" alt="">
+                <div>
+                    <div class="topOfferLabel">LUXIROUS & trendy</div>
+                    <div class="offerLabel">ACCESORIES</div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-lg-6 ">
+            <div class="offer col-sm-12 col-lg-12"><img src="img/offer3.jpg" alt="">
+                <div>
+                    <div class="topOfferLabel">30% offer</div>
+                    <div class="offerLabel">women</div>
+                </div>
+            </div>
+            <div class="offer col-sm-12 col-lg-12"><img src="img/offer4.jpg" alt="">
+                <div>
+                    <div class="topOfferLabel">new arrivals</div>
+                    <div class="offerLabel">FOR kids</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="futFon mt-4">
+    <div class="container">
+        <div class="futFonInfo row col-12 d-flex flex-column flex-lg-row align-items-center justify-content-center pt-5 pt-lg-0">
+            <div class="leftFutFon col-6 d-none d-lg-block">
+                <div class="photoForm d-flex"><img src="img/Layerwomen.jpeg" alt="photo">
+                    <div class="photoFormText ml-4">
+                        <p><i>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam condimentum mattis neque sed pretium”</i></p><span>Bin Burhan</span>
+                        <br>Dhaka, Bd
+                    </div>
+                </div>
+                <div class="rowsBut d-flex mt-4 ml-5 pl-5">
+                    <a href="">
+                        <div class="rowBut m-1"></div>
+                    </a>
+                    <a href="">
+                        <div class="rowBut rowActive m-1"></div>
+                    </a>
+                    <a href="">
+                        <div class="rowBut m-1"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="RiFutFon col-lg-6 col-sm-12 d-flex justify-content-center align-items-center pl-lg-5 pt-lg-0">
+                <div class="formMail d-flex flex-column align-items-center">
+                    <h2>Subscribe</h2>
+                    <p>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="inpForm">
+                        <label>
+                            <input name="Subscribe" type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
+                                   placeholder="Enter Your Email">
+                            <button class="subsBTN">Subscribe</button>
+                        </label>
+                    </form>
+                    <form class="inpFormSM col-12 d-flex d-sm-none">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter Your Email"
+                                   aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container d-none d-lg-block mt-5 pt-5 pb-5">
+    <div class="footerBut row d-flex justify-content-between">
+        <div class="row d-flex col-5">
+            <div class="blockBrand">
+                <div class="logo col-6 pl-5 d-flex justify-content-center pb-3">Bran<span>d</span></div>
+                <div>
+                    <p>Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an
+                        expanded array of processes and cross-unit partnerships.</p>
+                    <p> Efficiently plagiarize 24/365 action items and focused infomediaries Distinctively seize
+                        superior initiatives for wireless technologies.
+                        <br>Dynamically optimize. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex col-7">
+            <nav class="blockCompany col-4 d-flex flex-column">
+                <h2>COMPANY</h2> <a href="#">Home</a> <a href="#">Shop</a> <a href="#">About</a> <a href="#">How it
+                Works</a> <a href="#">Contact</a></nav>
+            <nav class="blockInformation col-4 d-flex flex-column">
+                <h2>INFORMATION</h2> <a href="#">Tearms & Condition</a> <a href="#">Privacy Policy</a> <a href="#">How
+                to Buy</a> <a href="#">How to Sell</a><a href="#">Promotion</a></nav>
+            <nav class="blockShop d-flex col-4 flex-column">
+                <h2>SHOP CATEGORY</h2> <a href="#">Men</a> <a href="#">Women</a> <a href="#">Child</a> <a href="#">Apparel</a>
+                <a href="#">Brows All</a></nav>
+        </div>
+    </div>
+</div>
+<footer class="brandAllFooter d-flex align-items-center">
+    <div class="container">
+        <div class="row d-flex justify-content-center justify-content-between align-items-center">
+            <div class="brandAll d-flex col-12 col-sm-8 justify-content-center justify-content-sm-between m-3 m-sm-0">
+                &copy; 2017 Brand All Rights Reserved.
+            </div>
+            <div class="messenge d-flex col-12 col-sm-3 justify-content-center justify-content-sm-between"><a
+                    href="#"><i
+                    class="fab fa-facebook-f"></i></a> <a
+                    href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> <a
+                    href="#"><i class="fab fa-pinterest-p"></i></a> <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
