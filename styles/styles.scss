@@ -1,6 +1,7 @@
 @import "variables";
 @import "header";
 @import "footer";
+@import "media/mediaSM.scss";
 
 //---------------------index-------------------------------
 
@@ -13,9 +14,8 @@
   height: inherit;
   background-image: url(../img/topHeaderBack.png);
   background-position: right 8% top;
-  /* Положение фона */
   background-repeat: no-repeat;
-  background-size: 48% /* Отменяем повторение фона */
+  background-size: 48%;
 }
 
 .menLable {
