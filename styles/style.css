@@ -73,8 +73,6 @@ body {
     height: 30px;
 }
 
-.topNav {}
-
 .topNav a {
     display: flex;
     align-items: center;
@@ -434,4 +432,3 @@ body {
     font-weight: 700;
     text-transform: uppercase;
 }
-
