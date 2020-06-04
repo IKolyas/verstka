@@ -1,7 +1,17 @@
-@charset "UTF-8";
 @media (max-width: 576px) {
   .inpForm {
     display: none; } }
+@media (max-width: 576px) {
+  .topBannerContent {
+    background-size: 100% !important; }
+
+  .menLabeltop {
+    font-size: 3rem !important;
+    color: #f15068 !important; }
+
+  .menLabelbut {
+    font-size: 2rem !important;
+    color: #f15068 !important; } }
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
@@ -67,6 +77,17 @@
 @media (max-width: 576px) {
   .inpForm {
     display: none; } }
+@media (max-width: 576px) {
+  .topBannerContent {
+    background-size: 100% !important; }
+
+  .menLabeltop {
+    font-size: 3rem !important;
+    color: #f15068 !important; }
+
+  .menLabelbut {
+    font-size: 2rem !important;
+    color: #f15068 !important; } }
 .futFon {
   height: 441px;
   background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%; }
@@ -160,59 +181,169 @@
       text-decoration: none;
       background: #f15068; }
 
+@media (max-width: 576px) {
+  .inpForm {
+    display: none; } }
+@media (max-width: 576px) {
+  .topBannerContent {
+    background-size: 100% !important; }
+
+  .menLabeltop {
+    font-size: 3rem !important;
+    color: #f15068 !important; }
+
+  .menLabelbut {
+    font-size: 2rem !important;
+    color: #f15068 !important; } }
 .topBanner {
   height: 615px;
   background: #e8e8e8; }
-
-.topBannerContent {
-  height: inherit;
-  background-image: url(../img/topHeaderBack.png);
-  background-position: right 8% top;
-  /* Положение фона */
-  background-repeat: no-repeat;
-  background-size: 48%; }
-
-.menLable {
-  border-left: 14px solid #f15068;
-  height: 94px;
-  line-height: 40px; }
-
-.menLabeltop {
-  color: #222222;
-  font-size: 4rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.menLabelbut {
-  color: #222222;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 80px; }
-
-.menLabelbut span {
-  color: #f15068; }
+  .topBanner .topBannerContent {
+    height: inherit;
+    background-image: url(../img/topHeaderBack.png);
+    background-position: right 8% top;
+    background-repeat: no-repeat;
+    background-size: 48%; }
+    .topBanner .topBannerContent .menLable {
+      border-left: 14px solid #f15068;
+      height: 94px;
+      line-height: 40px; }
+      .topBanner .topBannerContent .menLable .menLabeltop {
+        color: #222222;
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .topBanner .topBannerContent .menLable .menLabelbut {
+        color: #222222;
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 80px; }
+        .topBanner .topBannerContent .menLable .menLabelbut .menLabelbut span {
+          color: #f15068; }
 
 .offer {
   position: relative; }
+  .offer > div {
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 25px; }
+  .offer .topOfferLabel {
+    font-size: 1rem;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .offer .offerLabel {
+    font-size: 2rem;
+    color: #f15068;
+    font-weight: 700;
+    text-transform: uppercase; }
 
-.offer > div {
-  padding: 0 20px;
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 25px; }
-
-.topOfferLabel {
-  font-size: 1rem;
-  color: #222222;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.offerLabel {
+.FetItems h2 {
   font-size: 2rem;
-  color: #f15068;
+  line-height: 2.5rem;
   font-weight: 700;
-  text-transform: uppercase; }
+  letter-spacing: 0.025em;
+  color: #222222; }
+.FetItems p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #898989;
+  text-align: center; }
+
+.prodCard {
+  position: relative;
+  border: none;
+  max-width: 261px;
+  align-items: center; }
+  .prodCard img {
+    width: 261px;
+    height: 280px;
+    object-position: center center;
+    object-fit: cover; }
+  .prodCard:hover .psevProdCard {
+    display: flex; }
+  .prodCard .psevProdCardBody {
+    max-width: 261px; }
+    .prodCard .psevProdCardBody h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #222222; }
+    .prodCard .psevProdCardBody p {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #f15068; }
+  .prodCard .psevProdCard {
+    display: none;
+    position: absolute;
+    width: 261px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 56, 56, 0.83); }
+    .prodCard .psevProdCard a {
+      padding: .3rem;
+      display: flex;
+      align-items: center;
+      width: 123px;
+      height: 39px;
+      text-decoration: none;
+      border: 2px solid #ffffff;
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff; }
+  .prodCard:hover {
+    box-shadow: 0px 19px 14px -12px rgba(0, 0, 0, 0.38); }
+
+.butBrowseAllProd {
+  width: 212px;
+  height: 48px;
+  background-color: #f15068; }
+
+.buttBanBG {
+  background-color: #222224;
+  background-image: url(../img/banner.jpeg);
+  background-repeat: no-repeat; }
+  .buttBanBG .buttonBannerOffer {
+    font-size: 53.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff; }
+    .buttBanBG .buttonBannerOffer span {
+      color: #f16d7f;
+      font-weight: 700; }
+    .buttBanBG .buttonBannerOffer p {
+      font-size: 32.2px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #ffffff; }
+  .buttBanBG .buttonBannerText {
+    background-color: #222224;
+    position: relative; }
+    .buttBanBG .buttonBannerText h4 {
+      width: 220px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: #fbfbfb; }
+    .buttBanBG .buttonBannerText p {
+      width: 220px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      color: #fbfbfb; }
+    .buttBanBG .buttonBannerText img {
+      position: absolute;
+      left: 10%; }
 
 .newsProd {
   background-color: #f8f3f3; }

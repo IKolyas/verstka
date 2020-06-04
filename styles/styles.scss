@@ -1,72 +1,213 @@
 @import "variables";
 @import "header";
 @import "footer";
-@import "media/mediaSM.scss";
+@import "media/mediaSM";
 
 //---------------------index-------------------------------
 
 .topBanner {
   height: 615px;
   background: #e8e8e8;
-}
 
-.topBannerContent {
-  height: inherit;
-  background-image: url(../img/topHeaderBack.png);
-  background-position: right 8% top;
-  background-repeat: no-repeat;
-  background-size: 48%;
-}
+  .topBannerContent {
+    height: inherit;
+    background-image: url(../img/topHeaderBack.png);
+    background-position: right 8% top;
+    background-repeat: no-repeat;
+    background-size: 48%;
 
-.menLable {
-  border-left: 14px solid $mainThemeColor;
-  height: 94px;
-  line-height: 40px;
-}
+    .menLable {
+      border-left: 14px solid $mainThemeColor;
+      height: 94px;
+      line-height: 40px;
 
-.menLabeltop {
-  color: $mainTextColor;
-  font-size: 4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
+      .menLabeltop {
+        color: $mainTextColor;
+        font-size: 4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
 
-.menLabelbut {
-  color: $mainTextColor;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 80px;
-}
+      .menLabelbut {
+        color: $mainTextColor;
+        font-size: 2.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 80px;
 
-.menLabelbut span {
-  color: $mainThemeColor;
+        .menLabelbut span {
+          color: $mainThemeColor;
+        }
+      }
+    }
+  }
 }
 
 
 .offer {
   position: relative;
+
+  & > div {
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 25px;
+  }
+
+  .topOfferLabel {
+    font-size: 1rem;
+    color: $mainTextColor;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .offerLabel {
+    font-size: 2rem;
+    color: $mainThemeColor;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
-.offer > div {
-  padding: 0 20px;
-  background-color: #FFFFFF;
-  position: absolute;
-  top: 25px;
+.FetItems {
+  h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $mainTextColor;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: $mainTextColorP;
+    text-align: center;
+  }
 }
 
-.topOfferLabel {
-  font-size: 1rem;
-  color: $mainTextColor;
-  font-weight: 700;
-  text-transform: uppercase;
+.prodCard {
+  position: relative;
+  border: none;
+  max-width: 261px;
+  align-items: center;
+
+  img {
+    width: 261px;
+    height: 280px;
+    object-position: center center;
+    object-fit: cover;
+  }
+
+  &:hover {
+    .psevProdCard {
+      display: flex;
+    }
+  }
+
+  .psevProdCardBody {
+    max-width: 261px;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $mainTextColor;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: $mainThemeColor;
+    }
+  }
+
+  .psevProdCard {
+    display: none;
+    position: absolute;
+    width: 261px;
+    height: 280px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(58, 56, 56, 0.83);
+
+    a {
+      padding: .3rem;
+      display: flex;
+      align-items: center;
+      width: 123px;
+      height: 39px;
+      text-decoration: none;
+      border: 2px solid #ffffff;
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 19px 14px -12px rgba(0, 0, 0, 0.38);
+  }
 }
 
-.offerLabel {
-  font-size: 2rem;
-  color: $mainThemeColor;
-  font-weight: 700;
-  text-transform: uppercase;
+.butBrowseAllProd {
+  width: 212px;
+  height: 48px;
+  background-color: $mainThemeColor;
+}
+
+.buttBanBG {
+  background-color: #222224;
+  background-image: url(../img/banner.jpeg);
+  background-repeat: no-repeat;
+
+  .buttonBannerOffer {
+    font-size: 53.7px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+
+    span {
+      color: #f16d7f;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 32.2px;
+      line-height: 1.2;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #ffffff;
+    }
+  }
+  .buttonBannerText{
+    background-color: #222224;
+    position: relative;
+    h4{
+      width: 220px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 700;
+      letter-spacing: 0.025em;
+      color: #fbfbfb;
+    }
+    p{
+      width: 220px;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      color: #fbfbfb;
+    }
+    img{
+      position: absolute;
+      left: 10%;
+    }
+  }
 }
 
 //---------------------shopping cart--------------------------------
