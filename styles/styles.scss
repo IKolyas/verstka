@@ -184,10 +184,12 @@
       color: #ffffff;
     }
   }
-  .buttonBannerText{
+
+  .buttonBannerText {
     background-color: #222224;
     position: relative;
-    h4{
+
+    h4 {
       width: 220px;
       font-size: 20px;
       line-height: 1.2;
@@ -195,7 +197,8 @@
       letter-spacing: 0.025em;
       color: #fbfbfb;
     }
-    p{
+
+    p {
       width: 220px;
       font-size: 14px;
       line-height: 24px;
@@ -203,7 +206,8 @@
       letter-spacing: 0.025em;
       color: #fbfbfb;
     }
-    img{
+
+    img {
       position: absolute;
       left: 10%;
     }
@@ -378,12 +382,128 @@
 }
 
 //----------------------------------singlePage--------------------------------
+.corusBlock {
+  background-color: #f7f7f7;
+  border: 1.0px solid #eaeaea;
 
-
-.carousel {
-  height: 778px !important;
-  overflow: hidden;
+  .carusRow {
+    width: 47px;
+    height: 47px;
+    background-color: rgba(42, 42, 42, 0.14);
+  }
 }
-.carousel-inner {
-  overflow: visible;
+
+.corImg {
+  width: 597px;
+  height: 724px;
+  object-position: center center;
+  object-fit: contain;
+  border: none;
+}
+.productListContainer{
+  position: relative;
+}
+.productList {
+  position: absolute;
+  top: -90px;
+  height: 730px;
+  background-color: #ffffff;
+  border: 1.0px solid #eaeaea;
+
+  span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f16d7f;
+
+  }
+
+  .plrow {
+    width: 63px;
+    height: 1px;
+    background-color: #ef5b70;
+  }
+
+  .plrowActive {
+    width: 63px;
+    height: 3px;
+    background-color: #ef5b70;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin:0;
+    padding: 0;
+  }
+
+  p {
+    max-width: 618px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $mainTextColorP;
+  }
+
+  .spansList {
+    color: $mainTextColor;
+
+    span {
+      margin-left: 2px;
+      margin-right: 2px;
+      color: $mainThemeColor;
+    }
+  }
+
+  .money {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ef5b70;
+  }
+
+  .lineList {
+    max-width: 642px;
+    height: 1px;
+    background-color: $mainThemeColor;
+    border: 1.0px solid $mainThemeColor;
+  }
+
+  .inpList {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+
+    input {
+      max-width: 144px;
+      height: 35px;
+      border: 1.0px solid #eaeaea;
+    }
+  }
+
+  .ButList button {
+    width: 537px;
+    height: 55px;
+    background-color: #ffffff;
+    border: 1.0px solid #ef5b70;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ef5b70;
+
+    &:hover {
+      background-color: $mainThemeColor;
+      color: #ffffff;
+    }
+  }
+
+}
+
+.lableText{
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4d4d4d;
 }
