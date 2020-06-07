@@ -12,9 +12,6 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 450px) {
-  .sidenav a {
-    font-size: 20px !important; } }
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
@@ -91,9 +88,6 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 450px) {
-  .sidenav a {
-    font-size: 20px !important; } }
 .futFon {
   height: 441px;
   background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%; }
@@ -201,9 +195,6 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 450px) {
-  .sidenav a {
-    font-size: 20px !important; } }
 .topBanner {
   height: 615px;
   background: #e8e8e8; }
@@ -213,22 +204,22 @@
     background-position: right 8% top;
     background-repeat: no-repeat;
     background-size: 48%; }
-    .topBanner .topBannerContent .menLabel {
+    .topBanner .topBannerContent .menLable {
       border-left: 14px solid #f15068;
       height: 94px;
       line-height: 40px; }
-      .topBanner .topBannerContent .menLabel .menLabeltop {
+      .topBanner .topBannerContent .menLable .menLabeltop {
         color: #222222;
         font-size: 4rem;
         font-weight: 700;
         text-transform: uppercase; }
-      .topBanner .topBannerContent .menLabel .menLabelbut {
+      .topBanner .topBannerContent .menLable .menLabelbut {
         color: #222222;
         font-size: 2.2rem;
         font-weight: 700;
         text-transform: uppercase;
         line-height: 80px; }
-        .topBanner .topBannerContent .menLabel .menLabelbut .menLabelbut span {
+        .topBanner .topBannerContent .menLable .menLabelbut .menLabelbut span {
           color: #f15068; }
 
 .offer {
@@ -307,7 +298,7 @@
       font-weight: 700;
       color: #ffffff; }
   .prodCard:hover {
-    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
+    box-shadow: 0px 19px 14px -12px rgba(0, 0, 0, 0.38); }
 
 .butBrowseAllProd {
   width: 212px;
@@ -442,7 +433,7 @@
     color: #FFFFFF;
     box-shadow: 2px 4px 6px #969696;
     border: none; }
-.FormUser label {
+.FormUser lable {
   text-transform: uppercase;
   font-weight: 700; }
 .FormUser .FormUserGT span {
@@ -522,7 +513,8 @@
   .productList .lineList {
     max-width: 642px;
     height: 1px;
-    background-color: #f15068; }
+    background-color: #f15068;
+    border: 1px solid #f15068; }
   .productList .inpList {
     font-size: 14px;
     line-height: 24px;
@@ -545,150 +537,11 @@
       background-color: #f15068;
       color: #ffffff; }
 
-.labelText {
+.lableText {
   font-size: 24px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: #4d4d4d; }
-
-.sidenav a {
-  text-decoration: none;
-  font-size: 14px;
-  margin-bottom: .5rem;
-  font-weight: 400;
-  color: #6f6e6e;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none; }
-  .sidenav a:hover {
-    color: #f15068;
-    text-decoration: none; }
-.sidenav .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  margin-bottom: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #6f6e6e;
-  display: block;
-  border: none;
-  border-left: 5px solid #f15068;
-  border-bottom: 1px solid #898989;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none; }
-  .sidenav .dropdown-btn:hover {
-    color: #f15068;
-    text-decoration: none; }
-.sidenav .dropdown-container {
-  display: none;
-  background-color: #ffffff;
-  padding-left: 8px; }
-.sidenav .fa-caret-down {
-  float: right;
-  padding-right: 8px; }
-
-.inpScroll {
-  width: 260px; }
-
-.rightProduct label {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #6f6e6e; }
-.rightProduct .labelSize {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: #6f6e6e; }
-.rightProduct input[type=range]::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-  border-radius: 10px;
-  height: 5px;
-  width: 260px;
-  border: 1px solid #000;
-  background-color: #f15068; }
-.rightProduct input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: #f15068;
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: -5px; }
-.rightProduct .breadcrumb a {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #6f6e6e; }
-.rightProduct .active {
-  color: #f15068; }
-
-.sortProd {
-  height: 50px;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #6f6e6e; }
-  .sortProd .input-group {
-    background-color: #ffffff;
-    border: 1.0px solid #ebebeb; }
-    .sortProd .input-group .input-group-prepend {
-      height: 30px; }
-    .sortProd .input-group .custom-select {
-      height: 30px; }
-
-.paginationProduct button {
-  width: 150px;
-  height: 44px;
-  background-color: #ffffff;
-  border: 1px solid #f15068;
-  border-radius: 3.0px;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #ef5b70; }
-  .paginationProduct button:hover {
-    background-color: #f15068;
-    color: #ffffff; }
-.paginationProduct .pagination a {
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 300;
-  color: #c4c4c4; }
-  .paginationProduct .pagination a:hover {
-    color: #f15068;
-    font-weight: 700; }
-.paginationProduct .pagination .page-linkActive {
-  color: #ef5b70;
-  font-weight: 400; }
-
-.buttBanBGProduct {
-  background-color: #222224; }
-  .buttBanBGProduct .buttonBannerText {
-    min-height: 340px;
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-    color: #fbfbfb; }
-    .buttBanBGProduct .buttonBannerText h4 {
-      margin-top: 2rem; }
-    .buttBanBGProduct .buttonBannerText p {
-      margin-top: .5rem;
-      padding: .5rem; }
 
 /*# sourceMappingURL=styles.css.map */

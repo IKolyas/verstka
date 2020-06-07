@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-size: 48%;
 
-    .menLabel {
+    .menLable {
       border-left: 14px solid $mainThemeColor;
       height: 94px;
       line-height: 40px;
@@ -149,7 +149,7 @@
   }
 
   &:hover {
-    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 19px 14px -12px rgba(0, 0, 0, 0.38);
   }
 }
 
@@ -350,7 +350,7 @@
     }
   }
 
-  label {
+  lable {
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -400,11 +400,9 @@
   object-fit: contain;
   border: none;
 }
-
-.productListContainer {
+.productListContainer{
   position: relative;
 }
-
 .productList {
   position: absolute;
   top: -90px;
@@ -436,7 +434,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #4d4d4d;
-    margin: 0;
+    margin:0;
     padding: 0;
   }
 
@@ -468,6 +466,7 @@
     max-width: 642px;
     height: 1px;
     background-color: $mainThemeColor;
+    border: 1.0px solid $mainThemeColor;
   }
 
   .inpList {
@@ -501,207 +500,10 @@
 
 }
 
-.labelText {
+.lableText{
   font-size: 24px;
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: #4d4d4d;
-}
-
-
-//---------------------------Product_____-----------------
-
-.sidenav {
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: .5rem;
-    font-weight: 400;
-    color: #6f6e6e;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-
-    &:hover {
-      color: $mainThemeColor;
-      text-decoration: none;
-    }
-  }
-
-  .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    margin-bottom: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-    color: #6f6e6e;
-    display: block;
-    border: none;
-    border-left: 5px solid $mainThemeColor;
-    border-bottom: 1px solid $mainTextColorP;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-
-    &:hover {
-      color: $mainThemeColor;
-      text-decoration: none;
-    }
-  }
-
-  .dropdown-container {
-    display: none;
-    background-color: #ffffff;
-    padding-left: 8px;
-  }
-
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
-  }
-}
-.inpScroll{
-  width: 260px;
-}
-
-.rightProduct {
-  label {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #6f6e6e;
-  }
-
-  .labelSize {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #6f6e6e;
-  }
-
-  input[type=range]::-webkit-slider-runnable-track {
-    -webkit-appearance: none;
-    border-radius: 10px;
-    height: 5px;
-    width: 260px;
-    border: 1px solid #000;
-    background-color: $mainThemeColor;
-  }
-
-  input[type=range]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: $mainThemeColor;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: -5px;
-  }
-
-  .breadcrumb {
-    a {
-      font-size: 14px;
-      line-height: 26px;
-      font-weight: 400;
-      color: #6f6e6e;
-    }
-  }
-
-  .active {
-    color: $mainThemeColor;
-  }
-
-}
-
-
-.sortProd {
-  height: 50px;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #6f6e6e;
-
-  .input-group {
-    background-color: #ffffff;
-    border: 1.0px solid #ebebeb;
-    .input-group-prepend{
-      height: 30px;
-    }
-    .custom-select{
-      height: 30px;
-    }
-  }
-}
-
-.paginationProduct {
-  button {
-    width: 150px;
-    height: 44px;
-    background-color: #ffffff;
-    border: 1.0px solid $mainThemeColor;
-    border-radius: 3.0px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #ef5b70;
-
-    &:hover {
-      background-color: $mainThemeColor;
-      color: #ffffff;
-    }
-  }
-
-  .pagination {
-    a {
-      text-decoration: none;
-      font-size: 16px;
-      line-height: 26px;
-      font-weight: 300;
-      color: #c4c4c4;
-
-      &:hover {
-        color: $mainThemeColor;
-        font-weight: 700;
-      }
-    }
-
-    .page-linkActive {
-      color: #ef5b70;
-      font-weight: 400;
-    }
-  }
-}
-
-.buttBanBGProduct {
-  background-color: #222224;
-
-  .buttonBannerText {
-    min-height: 340px;
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 300;
-    letter-spacing: 0.025em;
-    color: #fbfbfb;
-
-    h4 {
-      margin-top: 2rem;
-    }
-
-    p {
-      margin-top: .5rem;
-      padding: .5rem;
-    }
-  }
 }
