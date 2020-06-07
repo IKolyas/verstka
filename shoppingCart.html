@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>shoppingCart</title>
+    <title>Shopping Cart</title>
 </head>
 
 <body>
@@ -62,14 +62,16 @@
 <div class="headerLine"></div>
 <nav class="container">
     <div class="topNav col-12 d-none d-md-flex flex-column flex-lg-row justify-content-center align-items-center"><a
-            href="#">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a href="#">Accoseriese</a>
-        <a href="#">Featured</a> <a href="#">Hot Deals</a></div>
+            href="index.html">Home</a> <a href="product.html">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a
+            href="#">Accoseriese</a>
+        <a href="#">Featured</a> <a href="singlePage.html">Hot Deals</a></div>
     <div class="topNavMobile fixed-top d-block d-md-none">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4 d-flex flex-column justify-content-center">
-                <a href="index.html">Home</a> <a href="#">Man</a> <a href="#">Women</a> <a href="#">Kids</a> <a
-                    href="#">Accoseriese</a>
-                <a href="#">Featured</a> <a href="#">Hot Deals</a>
+                <a href="index.html">Home</a> <a href="product.html">Man</a> <a href="#">Women</a> <a href="#">Kids</a>
+                <a
+                        href="#">Accoseriese</a>
+                <a href="#">Featured</a> <a href="singlePage.html">Hot Deals</a>
             </div>
         </div>
         <nav class="navbar navbar-light bg-light">
@@ -81,14 +83,13 @@
         </nav>
     </div>
 </nav>
-
-
 <div class="newsProd">
     <div class="container">
         <div class="news row flex-column flex-sm-row container justify-content-between  align-items-center pt-5 pb-5">
             <div class="newsAr">
                 <h2>news arrivals</h2></div>
-            <nav class="newsNav"><a class="newsNavlink" href="index.html">Home</a> / <a class="newsNavlink" href="#">Men</a> / <a
+            <nav class="newsNav"><a class="newsNavlink" href="index.html">Home</a> / <a class="newsNavlink"
+                                                                                        href="#">Men</a> / <a
                     class="newsNavlink newsNavLinkActive" href="#">news arrivals</a></nav>
         </div>
     </div>
@@ -174,11 +175,9 @@
     <div class="row FormUser d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between mt-5 pt-3 pb-5">
         <div class="d-flex col-12 col-lg-3 justify-content-center">
             <form class="d-flex flex-column  mb-3">
-                <lable>Shipping Adress</lable>
-                <label>
+                <label>Shipping Adress
                     <input class="pl-3" type="text" list="city" name="city" placeholder="Bangladesh"
-                           pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$">
-                </label>
+                           pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$"></label>
                 <datalist id="city">
                     <option value="city">
                     <option value="city">
@@ -186,25 +185,26 @@
                 </datalist>
                 <label>
                     <input type="text" class="pl-3" placeholder="State" pattern="^[а-яА-ЯёЁa-zA-Z0-9]+$">
-                    <input type="text" class="pl-3" placeholder="Postcode / Zip" pattern="^[a-zA-Z0-9]+$">
-                    <button>get a quote</button>
                 </label>
-
+                <label>
+                    <input type="text" class="pl-3" placeholder="Postcode / Zip" pattern="^[a-zA-Z0-9]+$">
+                </label>
+                <button>get a quote</button>
             </form>
         </div>
         <div class="d-flex col-12 col-lg-3">
             <form method="post" class="d-flex flex-column justify-content-center mb-3">
-                <lable>coupon discount</lable>
+                <label>coupon discount</label>
                 <span class="mt-4">Enter your coupon code if you have one</span>
                 <label>
                     <input type="text" class="pl-3" placeholder="State" pattern="^[a-zA-Z0-9]+$">
-                    <button>Apply coupon</button>
                 </label>
-
+                <button>Apply coupon</button>
             </form>
         </div>
         <div class="FormUserGT col-12 col-lg-3 d-flex p-4">
-            <form class="d-flex flex-column align-items-sm-center align-items-lg-end "><span class="pb-1">SUB TOTAL $900</span>
+            <form class="d-flex flex-column align-items-sm-center align-items-lg-end "><span
+                    class="pb-1">SUB TOTAL $900</span>
                 <h5>GRAND TOTAL<span> $900</span></h5>
                 <div class="headerLine mt-4"></div>
                 <button>proceed to checkout</button>
