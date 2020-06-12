@@ -1,47 +1,66 @@
 @import "variables";
 @import "media/mediaSM";
+
 .futFon {
-  height: 441px;
-  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%;
+  min-height: 438px;
+  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 28%, #ccc;
+  background-blend-mode: overlay;
+  background-size: cover;
 
   .futFonInfo {
-    height: 441px;
-  }
+    min-height: 438px;
 
-  .photoForm {
-    font-size: 1rem;
+    .leftFutFon {
+      min-height: inherit;
 
-    p {
-      color: $mainTextColor;
-      font-size: 1rem;
-      text-align: justify;
-      font-weight: 400;
+      .footerCarousel {
+        position: relative;
+        justify-content: left;
+        margin-left: 20%;
+
+        li{
+          height: 4px;
+          width: 40px;
+        }
+        .active {
+          background-color: $mainThemeColor;
+        }
+      }
+
+      .photoForm {
+        font-size: 1rem;
+
+        p {
+          color: $mainTextColor;
+          font-size: 1rem;
+          text-align: justify;
+          font-weight: 400;
+        }
+
+        span {
+          color: $mainThemeColor;
+          font-size: 1rem;
+          font-weight: 700;
+        }
+
+        img {
+          width: 84px;
+          height: 84px;
+          border-radius: 45px;
+        }
+
+        .photoFormText {
+          max-width: 390px;
+        }
+      }
     }
 
-    span {
-      color: $mainThemeColor;
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    img {
-      width: 84px;
-      height: 84px;
-      border-radius: 45px;
+    .RiFutFon {
+      min-height: inherit;
     }
   }
 
-  .rowBut {
-    width: 40px;
-    border-bottom: 4px solid #D6D6D6;
-    &:hover{
-      border-bottom: 5px solid $mainThemeColor;
-    }
-  }
 
-  .rowActive {
-    border-bottom: 5px solid $mainThemeColor;
-  }
 }
 
 .formMail {
@@ -75,7 +94,6 @@
     }
   }
 }
-
 
 
 .footerBut {

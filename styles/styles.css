@@ -1,9 +1,13 @@
 @media (max-width: 576px) {
   .inpForm {
     display: none; } }
+@media (max-width: 350px) {
+  .rTop .btnNonSSM button:first-child {
+    display: none; } }
 @media (max-width: 576px) {
   .topBannerContent {
-    background-size: 100% !important; }
+    background-size: 100% !important;
+    background-blend-mode: overlay; }
 
   .menLabeltop {
     font-size: 3rem !important;
@@ -15,6 +19,50 @@
 @media (max-width: 450px) {
   .sidenav a {
     font-size: 20px !important; } }
+@media (max-width: 991px) {
+  .buttBanBG {
+    background-blend-mode: overlay; } }
+@media (min-width: 992px) {
+  .RiFutFon {
+    border-left: 1px solid #e3e3e3; } }
+@media (max-width: 991px) {
+  .futFon {
+    min-height: auto; }
+    .futFon .futFonInfo {
+      min-height: inherit; }
+      .futFon .futFonInfo .RiFutFon {
+        min-height: inherit;
+        border-top: 1px solid #e3e3e3;
+        padding-top: 2rem; }
+      .futFon .futFonInfo .leftFutFon {
+        min-height: inherit; }
+        .futFon .futFonInfo .leftFutFon .footerCarousel {
+          justify-content: center;
+          margin: 0 auto; } }
+@media (max-width: 1199px) {
+  .offer > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center; }
+
+  .offerText .topOfferLabel {
+    font-size: 3rem !important; }
+  .offerText .offerLabel {
+    font-size: 4rem !important; } }
+@media (min-width: 992px) {
+  .prodCard {
+    flex: none !important; } }
+@media (min-width: 768px) {
+  .prodCard:hover .psevProdCard {
+    display: flex; }
+  .prodCard .psevProdCard:hover {
+    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); } }
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
@@ -76,13 +124,19 @@
     text-shadow: 2px 4px 6px rgba(150, 150, 150, 0.4);
     text-decoration: none;
     color: #f15068; }
+.topNavMobile button {
+  background-color: #f15068; }
 
 @media (max-width: 576px) {
   .inpForm {
     display: none; } }
+@media (max-width: 350px) {
+  .rTop .btnNonSSM button:first-child {
+    display: none; } }
 @media (max-width: 576px) {
   .topBannerContent {
-    background-size: 100% !important; }
+    background-size: 100% !important;
+    background-blend-mode: overlay; }
 
   .menLabeltop {
     font-size: 3rem !important;
@@ -94,33 +148,87 @@
 @media (max-width: 450px) {
   .sidenav a {
     font-size: 20px !important; } }
+@media (max-width: 991px) {
+  .buttBanBG {
+    background-blend-mode: overlay; } }
+@media (min-width: 992px) {
+  .RiFutFon {
+    border-left: 1px solid #e3e3e3; } }
+@media (max-width: 991px) {
+  .futFon {
+    min-height: auto; }
+    .futFon .futFonInfo {
+      min-height: inherit; }
+      .futFon .futFonInfo .RiFutFon {
+        min-height: inherit;
+        border-top: 1px solid #e3e3e3;
+        padding-top: 2rem; }
+      .futFon .futFonInfo .leftFutFon {
+        min-height: inherit; }
+        .futFon .futFonInfo .leftFutFon .footerCarousel {
+          justify-content: center;
+          margin: 0 auto; } }
+@media (max-width: 1199px) {
+  .offer > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center; }
+
+  .offerText .topOfferLabel {
+    font-size: 3rem !important; }
+  .offerText .offerLabel {
+    font-size: 4rem !important; } }
+@media (min-width: 992px) {
+  .prodCard {
+    flex: none !important; } }
+@media (min-width: 768px) {
+  .prodCard:hover .psevProdCard {
+    display: flex; }
+  .prodCard .psevProdCard:hover {
+    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); } }
 .futFon {
-  height: 441px;
-  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%; }
+  min-height: 438px;
+  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 28%, #ccc;
+  background-blend-mode: overlay;
+  background-size: cover; }
   .futFon .futFonInfo {
-    height: 441px; }
-  .futFon .photoForm {
-    font-size: 1rem; }
-    .futFon .photoForm p {
-      color: #222222;
-      font-size: 1rem;
-      text-align: justify;
-      font-weight: 400; }
-    .futFon .photoForm span {
-      color: #f15068;
-      font-size: 1rem;
-      font-weight: 700; }
-    .futFon .photoForm img {
-      width: 84px;
-      height: 84px;
-      border-radius: 45px; }
-  .futFon .rowBut {
-    width: 40px;
-    border-bottom: 4px solid #D6D6D6; }
-    .futFon .rowBut:hover {
-      border-bottom: 5px solid #f15068; }
-  .futFon .rowActive {
-    border-bottom: 5px solid #f15068; }
+    min-height: 438px; }
+    .futFon .futFonInfo .leftFutFon {
+      min-height: inherit; }
+      .futFon .futFonInfo .leftFutFon .footerCarousel {
+        position: relative;
+        justify-content: left;
+        margin-left: 20%; }
+        .futFon .futFonInfo .leftFutFon .footerCarousel li {
+          height: 4px;
+          width: 40px; }
+        .futFon .futFonInfo .leftFutFon .footerCarousel .active {
+          background-color: #f15068; }
+      .futFon .futFonInfo .leftFutFon .photoForm {
+        font-size: 1rem; }
+        .futFon .futFonInfo .leftFutFon .photoForm p {
+          color: #222222;
+          font-size: 1rem;
+          text-align: justify;
+          font-weight: 400; }
+        .futFon .futFonInfo .leftFutFon .photoForm span {
+          color: #f15068;
+          font-size: 1rem;
+          font-weight: 700; }
+        .futFon .futFonInfo .leftFutFon .photoForm img {
+          width: 84px;
+          height: 84px;
+          border-radius: 45px; }
+        .futFon .futFonInfo .leftFutFon .photoForm .photoFormText {
+          max-width: 390px; }
+    .futFon .futFonInfo .RiFutFon {
+      min-height: inherit; }
 
 .formMail h2 {
   color: #222222;
@@ -190,9 +298,13 @@
 @media (max-width: 576px) {
   .inpForm {
     display: none; } }
+@media (max-width: 350px) {
+  .rTop .btnNonSSM button:first-child {
+    display: none; } }
 @media (max-width: 576px) {
   .topBannerContent {
-    background-size: 100% !important; }
+    background-size: 100% !important;
+    background-blend-mode: overlay; }
 
   .menLabeltop {
     font-size: 3rem !important;
@@ -204,15 +316,57 @@
 @media (max-width: 450px) {
   .sidenav a {
     font-size: 20px !important; } }
+@media (max-width: 991px) {
+  .buttBanBG {
+    background-blend-mode: overlay; } }
+@media (min-width: 992px) {
+  .RiFutFon {
+    border-left: 1px solid #e3e3e3; } }
+@media (max-width: 991px) {
+  .futFon {
+    min-height: auto; }
+    .futFon .futFonInfo {
+      min-height: inherit; }
+      .futFon .futFonInfo .RiFutFon {
+        min-height: inherit;
+        border-top: 1px solid #e3e3e3;
+        padding-top: 2rem; }
+      .futFon .futFonInfo .leftFutFon {
+        min-height: inherit; }
+        .futFon .futFonInfo .leftFutFon .footerCarousel {
+          justify-content: center;
+          margin: 0 auto; } }
+@media (max-width: 1199px) {
+  .offer > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center; }
+
+  .offerText .topOfferLabel {
+    font-size: 3rem !important; }
+  .offerText .offerLabel {
+    font-size: 4rem !important; } }
+@media (min-width: 992px) {
+  .prodCard {
+    flex: none !important; } }
+@media (min-width: 768px) {
+  .prodCard:hover .psevProdCard {
+    display: flex; }
+  .prodCard .psevProdCard:hover {
+    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); } }
 .topBanner {
   height: 615px;
   background: #e8e8e8; }
   .topBanner .topBannerContent {
     height: inherit;
-    background-image: url(../img/topHeaderBack.png);
-    background-position: right 8% top;
-    background-repeat: no-repeat;
-    background-size: 48%; }
+    background-size: 48%;
+    background: url(../img/topHeaderBack.png) no-repeat right 8% top, #e8e8e8; }
     .topBanner .topBannerContent .menLabel {
       border-left: 14px solid #f15068;
       height: 94px;
@@ -233,21 +387,47 @@
 
 .offer {
   position: relative; }
-  .offer > div {
+  .offer > a {
+    text-decoration: none;
     padding: 0 20px;
     background-color: #FFFFFF;
     position: absolute;
     top: 25px; }
-  .offer .topOfferLabel {
+    .offer > a:hover {
+      text-decoration: none; }
+  .offer .offerText .topOfferLabel {
     font-size: 1rem;
     color: #222222;
     font-weight: 700;
     text-transform: uppercase; }
-  .offer .offerLabel {
+  .offer .offerText .offerLabel {
     font-size: 2rem;
     color: #f15068;
     font-weight: 700;
     text-transform: uppercase; }
+
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg); }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg); } }
+#spinner, #spinner2, #spinner3, #spinner4 {
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+  animation-name: spinner;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; }
 
 .FetItems h2 {
   font-size: 2rem;
@@ -264,28 +444,30 @@
 
 .prodCard {
   position: relative;
-  border: none;
-  max-width: 261px;
+  max-width: 261px !important;
   align-items: center; }
   .prodCard img {
     width: 261px;
     height: 280px;
     object-position: center center;
     object-fit: cover; }
-  .prodCard:hover .psevProdCard {
-    display: flex; }
   .prodCard .psevProdCardBody {
-    max-width: 261px; }
+    width: inherit; }
     .prodCard .psevProdCardBody h3 {
+      width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       color: #222222; }
     .prodCard .psevProdCardBody p {
+      width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       color: #f15068; }
+      .prodCard .psevProdCardBody p a {
+        text-decoration: none;
+        color: #f15068; }
   .prodCard .psevProdCard {
     display: none;
     position: absolute;
@@ -306,8 +488,6 @@
       line-height: 1.2;
       font-weight: 700;
       color: #ffffff; }
-  .prodCard:hover {
-    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
 
 .butBrowseAllProd {
   width: 212px;
@@ -335,24 +515,20 @@
       color: #ffffff; }
   .buttBanBG .buttonBannerText {
     background-color: #222224;
-    position: relative; }
+    min-height: 525px; }
     .buttBanBG .buttonBannerText h4 {
-      width: 220px;
       font-size: 20px;
       line-height: 1.2;
       font-weight: 700;
-      letter-spacing: 0.025em;
       color: #fbfbfb; }
     .buttBanBG .buttonBannerText p {
-      width: 220px;
       font-size: 14px;
       line-height: 24px;
       font-weight: 300;
       letter-spacing: 0.025em;
       color: #fbfbfb; }
     .buttBanBG .buttonBannerText img {
-      position: absolute;
-      left: 10%; }
+      width: 80px !important; }
 
 .newsProd {
   background-color: #f8f3f3; }
@@ -597,6 +773,9 @@
   float: right;
   padding-right: 8px; }
 
+.breadcrumb-item::before:not(:first-child) {
+  content: "|"; }
+
 .inpScroll {
   width: 260px; }
 
@@ -647,6 +826,9 @@
     border: 1.0px solid #ebebeb; }
     .sortProd .input-group .input-group-prepend {
       height: 30px; }
+      .sortProd .input-group .input-group-prepend button {
+        border: none;
+        color: #222222; }
     .sortProd .input-group .custom-select {
       height: 30px; }
 

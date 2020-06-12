@@ -11,10 +11,9 @@
 
   .topBannerContent {
     height: inherit;
-    background-image: url(../img/topHeaderBack.png);
-    background-position: right 8% top;
-    background-repeat: no-repeat;
     background-size: 48%;
+    background: url(../img/topHeaderBack.png) no-repeat right 8% top, #e8e8e8;
+
 
     .menLabel {
       border-left: 14px solid $mainThemeColor;
@@ -47,26 +46,63 @@
 .offer {
   position: relative;
 
-  & > div {
+  & > a {
+    text-decoration: none;
     padding: 0 20px;
     background-color: #FFFFFF;
     position: absolute;
     top: 25px;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  .offerText{
+    .topOfferLabel {
+      font-size: 1rem;
+      color: $mainTextColor;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .offerLabel {
+      font-size: 2rem;
+      color: $mainThemeColor;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
   }
 
-  .topOfferLabel {
-    font-size: 1rem;
-    color: $mainTextColor;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
+}
 
-  .offerLabel {
-    font-size: 2rem;
-    color: $mainThemeColor;
-    font-weight: 700;
-    text-transform: uppercase;
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
+}
+
+#spinner, #spinner2, #spinner3, #spinner4 {
+
+  -webkit-animation-name: spinner;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+
+  animation-name: spinner;  // указываем на ключевые кадры анимации с названием "spinner"
+  animation-timing-function: linear; // функция синхронизации, с помощью которой будут происходить преобразования
+  animation-iteration-count: infinite; // количество повторов анимации. "infinite" - значит бесконечно
+  animation-duration: 6s; // длительность анимации
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d; // указываем что это 3D преобразование
 }
 
 .FetItems {
@@ -89,8 +125,7 @@
 
 .prodCard {
   position: relative;
-  border: none;
-  max-width: 261px;
+  max-width: 261px!important;
   align-items: center;
 
   img {
@@ -100,16 +135,12 @@
     object-fit: cover;
   }
 
-  &:hover {
-    .psevProdCard {
-      display: flex;
-    }
-  }
 
   .psevProdCardBody {
-    max-width: 261px;
+    width: inherit;
 
     h3 {
+      width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
@@ -117,10 +148,15 @@
     }
 
     p {
+      width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       color: $mainThemeColor;
+      a{
+        text-decoration: none;
+        color: $mainThemeColor;
+      }
     }
   }
 
@@ -148,9 +184,6 @@
     }
   }
 
-  &:hover {
-    box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
-  }
 }
 
 .butBrowseAllProd {
@@ -187,19 +220,16 @@
 
   .buttonBannerText {
     background-color: #222224;
-    position: relative;
+    min-height: 525px;
 
     h4 {
-      width: 220px;
       font-size: 20px;
       line-height: 1.2;
       font-weight: 700;
-      letter-spacing: 0.025em;
       color: #fbfbfb;
     }
 
     p {
-      width: 220px;
       font-size: 14px;
       line-height: 24px;
       font-weight: 300;
@@ -208,8 +238,7 @@
     }
 
     img {
-      position: absolute;
-      left: 10%;
+      width: 80px!important;
     }
   }
 }
@@ -569,7 +598,12 @@
     padding-right: 8px;
   }
 }
-.inpScroll{
+.breadcrumb-item::before:{
+  content: "|"!important;
+}
+
+
+.inpScroll {
   width: 260px;
 }
 
@@ -636,10 +670,16 @@
   .input-group {
     background-color: #ffffff;
     border: 1.0px solid #ebebeb;
-    .input-group-prepend{
+
+    .input-group-prepend {
       height: 30px;
+      button{
+        border: none;
+        color: $mainTextColor;
+      }
     }
-    .custom-select{
+
+    .custom-select {
       height: 30px;
     }
   }
