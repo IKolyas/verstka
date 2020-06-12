@@ -773,8 +773,8 @@
   float: right;
   padding-right: 8px; }
 
-.breadcrumb-item::before:not(:first-child) {
-  content: "|"; }
+.breadcrumb-item::before {
+  content: "|" !important; }
 
 .inpScroll {
   width: 260px; }
