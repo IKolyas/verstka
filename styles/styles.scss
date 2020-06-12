@@ -87,7 +87,7 @@
   }
 }
 
-#spinner, #spinner2, #spinner3, #spinner4 {
+#spinner:hover, #spinner2:hover, #spinner3:hover, #spinner4:hover {
 
   -webkit-animation-name: spinner;
   -webkit-animation-timing-function: linear;
@@ -127,7 +127,9 @@
   position: relative;
   max-width: 261px!important;
   align-items: center;
-
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
   img {
     width: 261px;
     height: 280px;

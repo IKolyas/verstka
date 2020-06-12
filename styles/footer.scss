@@ -3,7 +3,7 @@
 
 .futFon {
   min-height: 438px;
-  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 28%, #ccc;
+  background: url(../img/Layer41@1X.jpeg) no-repeat center 28%, #ccc;
   background-blend-mode: overlay;
   background-size: cover;
 
@@ -152,6 +152,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      -webkit-transition: all 1.5s;
+      -moz-transition: all 1.5s;
+      -o-transition: all 1.5s;
+
 
       &:hover {
         color: white;
