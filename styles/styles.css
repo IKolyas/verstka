@@ -39,7 +39,7 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 576px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
     display: flex;
@@ -55,10 +55,10 @@
     font-size: 2.5rem !important; }
   .offerText .offerLabel {
     font-size: 3.5rem !important; } }
-@media (max-width: 576px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .prodCard {
     flex: none !important; } }
-@media (max-width: 576px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
@@ -168,7 +168,7 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 576px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
     display: flex;
@@ -184,10 +184,10 @@
     font-size: 2.5rem !important; }
   .offerText .offerLabel {
     font-size: 3.5rem !important; } }
-@media (max-width: 576px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .prodCard {
     flex: none !important; } }
-@media (max-width: 576px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
@@ -339,7 +339,7 @@
   .menLabelbut {
     font-size: 2rem !important;
     color: #f15068 !important; } }
-@media (max-width: 576px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
     display: flex;
@@ -355,10 +355,10 @@
     font-size: 2.5rem !important; }
   .offerText .offerLabel {
     font-size: 3.5rem !important; } }
-@media (max-width: 576px) and (min-width: 992px) {
+@media (min-width: 992px) {
   .prodCard {
     flex: none !important; } }
-@media (max-width: 576px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {

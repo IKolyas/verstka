@@ -75,48 +75,46 @@
     font-size: 2rem !important;
     color: $mainThemeColor !important;
   }
+}
 
-  @media (max-width: 1199px) {
+@media (max-width: 1199px) {
 
-    .offer > a {
-      text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      top: 0 !important;
-      opacity: 0.6;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
+  .offer > a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    top: 0 !important;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .offerText {
+    .topOfferLabel {
+      font-size: 2.5rem !important;
     }
-    .offerText {
-      .topOfferLabel {
-        font-size: 2.5rem !important;
-      }
 
-      .offerLabel {
-        font-size: 3.5rem !important;
-      }
+    .offerLabel {
+      font-size: 3.5rem !important;
     }
   }
+}
 
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
 
-    .prodCard {
-      flex: none !important;
-    }
-
+  .prodCard {
+    flex: none !important;
   }
 
-  @media (min-width: 768px) {
-    .prodCard {
-      &:hover {
-        box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
+}
 
-        .psevProdCard {
-          display: flex;
-
-        }
+@media (min-width: 768px) {
+  .prodCard {
+    &:hover {
+      box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
+      .psevProdCard {
+        display: flex;
       }
     }
   }
