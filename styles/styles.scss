@@ -747,3 +747,62 @@
     }
   }
 }
+
+//------------------------checkout-------------------------------
+
+.checkBtnMenu{
+  border: none!important;
+  background-color: #ffffff!important;
+  color: black!important;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.hedTheme{
+  color: $mainTextColor!important;
+  .hedThemeText{
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222!important;
+
+  }
+  p, a{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $mainTextColorP!important;
+  }
+  span{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff0d0d;
+  }
+  mark{
+    background-color: #ffffff;
+    color: red;
+  }
+  .checkButton{
+    width: 180px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1.0px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+  }
+  .forgotPass{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+}
+
+

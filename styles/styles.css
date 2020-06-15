@@ -81,10 +81,10 @@
 
 .rTop a {
   text-decoration: none;
-  color: #222222; }
+  color: #131313; }
   .rTop a:hover {
     text-decoration: none;
-    color: #222222; }
+    color: #131313; }
 .rTop .btn-group button {
   background-color: #ef6375; }
 
@@ -97,7 +97,7 @@
   align-items: center;
   height: 2.5rem;
   text-decoration: none;
-  color: #222222;
+  color: #131313;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -106,7 +106,7 @@
   .topNav a:hover {
     text-shadow: 2px 4px 6px #969696;
     text-decoration: none;
-    color: #222222;
+    color: #131313;
     border-bottom: 4px solid #f15068; }
 
 .topNavMobile a {
@@ -213,7 +213,7 @@
       .futFon .futFonInfo .leftFutFon .photoForm {
         font-size: 1rem; }
         .futFon .futFonInfo .leftFutFon .photoForm p {
-          color: #222222;
+          color: #131313;
           font-size: 1rem;
           text-align: justify;
           font-weight: 400; }
@@ -231,7 +231,7 @@
       min-height: inherit; }
 
 .formMail h2 {
-  color: #222222;
+  color: #131313;
   font-size: 1.7rem;
   text-transform: uppercase;
   font-weight: 700; }
@@ -279,7 +279,7 @@
   .brandAllFooter .brandAll {
     color: #7A7A7A; }
   .brandAllFooter .messenge a {
-    color: #222222; }
+    color: #131313; }
     .brandAllFooter .messenge a:hover {
       color: white;
       text-decoration: none; }
@@ -375,12 +375,12 @@
       height: 94px;
       line-height: 40px; }
       .topBanner .topBannerContent .menLabel .menLabeltop {
-        color: #222222;
+        color: #131313;
         font-size: 4rem;
         font-weight: 700;
         text-transform: uppercase; }
       .topBanner .topBannerContent .menLabel .menLabelbut {
-        color: #222222;
+        color: #131313;
         font-size: 2.2rem;
         font-weight: 700;
         text-transform: uppercase;
@@ -400,7 +400,7 @@
       text-decoration: none; }
   .offer .offerText .topOfferLabel {
     font-size: 1rem;
-    color: #222222;
+    color: #131313;
     font-weight: 700;
     text-transform: uppercase; }
   .offer .offerText .offerLabel {
@@ -437,7 +437,7 @@
   line-height: 2.5rem;
   font-weight: 700;
   letter-spacing: 0.025em;
-  color: #222222; }
+  color: #131313; }
 .FetItems p {
   font-size: 1rem;
   font-weight: 400;
@@ -464,7 +464,7 @@
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #222222; }
+      color: #131313; }
     .prodCard .psevProdCardBody p {
       width: inherit;
       font-size: 1rem;
@@ -567,7 +567,7 @@
 .prodHeaders {
   font-size: 13px;
   font-weight: 700;
-  color: #222222; }
+  color: #131313; }
   .prodHeaders .productDet img {
     width: 101px;
     height: 116px;
@@ -576,12 +576,12 @@
     object-fit: cover; }
   .prodHeaders .ProdDetText h3 {
     font-size: 13px;
-    color: #222222;
+    color: #131313;
     text-transform: uppercase;
     margin-bottom: 3rem; }
   .prodHeaders .ProdDetText span {
     font-size: 13px;
-    color: #222222; }
+    color: #131313; }
   .prodHeaders .ProdDetText mark {
     background: none;
     color: #575757; }
@@ -692,7 +692,7 @@
     font-weight: 400;
     color: #898989; }
   .productList .spansList {
-    color: #222222; }
+    color: #131313; }
     .productList .spansList span {
       margin-left: 2px;
       margin-right: 2px;
@@ -834,7 +834,7 @@
       height: 30px; }
       .sortProd .input-group .input-group-prepend button {
         border: none;
-        color: #222222; }
+        color: #131313; }
     .sortProd .input-group .custom-select {
       height: 30px; }
 
@@ -878,5 +878,51 @@
     .buttBanBGProduct .buttonBannerText p {
       margin-top: .5rem;
       padding: .5rem; }
+
+.checkBtnMenu {
+  border: none !important;
+  background-color: #ffffff !important;
+  color: black !important;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.hedTheme {
+  color: #131313 !important; }
+  .hedTheme .hedThemeText {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222 !important; }
+  .hedTheme p, .hedTheme a {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #898989 !important; }
+  .hedTheme span {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff0d0d; }
+  .hedTheme mark {
+    background-color: #ffffff;
+    color: red; }
+  .hedTheme .checkButton {
+    width: 180px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 1.0px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a; }
+  .hedTheme .forgotPass {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222222; }
 
 /*# sourceMappingURL=styles.css.map */
