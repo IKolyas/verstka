@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="https://kit.fontawesome.com/861689887d.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
+    <title>Product</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Home</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css">
 </head>
-
 <body>
 <header class="container">
     <div class="row d-flex align-items-center justify-content-center mb-3 mt-5 mt-sm-0 pt-2">
@@ -120,107 +121,186 @@
 <main class="container my-5">
     <div class="row">
         <div class="leftMenu col-12 col-md-3 d-flex flex-column ">
-            <div class="sidenav d-fle flex-column">
-                <button class="dropdown-btn">category
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Accessories</a>
-                    <a href="#">Bags</a>
-                    <a href="#">Denim</a>
-                    <a href="#">Hoodies & Sweatshirts</a>
-                    <a href="#">Jackets & Coats</a>
-                    <a href="#">Pants</a>
-                    <a href="#">Polos</a>
-                    <a href="#">Shirts</a>
-                    <a href="#">Shoes</a>
-                    <a href="#">Shorts</a>
-                    <a href="#">Sweaters & Knits</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Tanks</a>
+            <div class="accordion" id="accordionExample">
+                <div class="card border-0 rounded-0 pb-3">
+                    <div class="card-header bg-transparent prodCardHeader p-0" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                category
+                                <svg class="bi bi-caret-down-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                         data-parent="#accordionExample">
+                        <div class="drBtnContProd d-flex flex-column pl-3 pt-1">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Pants</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Shorts</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </div>
                 </div>
-                <button class="dropdown-btn">brand
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Accessories</a>
-                    <a href="#">Bags</a>
-                    <a href="#">Sweaters & Knits</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Tanks</a>
+                <div class="card border-0 rounded-0 pb-3">
+                    <div class="card-header bg-transparent prodCardHeader p-0" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                brand
+                                <svg class="bi bi-caret-down-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="drBtnContProd d-flex flex-column pl-3 pt-1">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Pants</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Shorts</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </div>
                 </div>
-                <button class="dropdown-btn">designer
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <a href="#">Accessories</a>
-                    <a href="#">Bags</a>
-                    <a href="#">Sweaters & Knits</a>
-                    <a href="#">T-Shirts</a>
-                    <a href="#">Tanks</a>
+                <div class="card border-0 rounded-0 pb-3">
+                    <div class="card-header bg-transparent prodCardHeader p-0" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed d-flex justify-content-between align-items-center"
+                                    type="button" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                designer
+                                <svg class="bi bi-caret-down-fill" width="1em" height="1em" viewBox="0 0 16 16"
+                                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                </svg>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                         data-parent="#accordionExample">
+                        <div class="drBtnContProd d-flex flex-column pl-3 pt-1">
+                            <a href="#">Accessories</a>
+                            <a href="#">Bags</a>
+                            <a href="#">Denim</a>
+                            <a href="#">Hoodies & Sweatshirts</a>
+                            <a href="#">Jackets & Coats</a>
+                            <a href="#">Pants</a>
+                            <a href="#">Polos</a>
+                            <a href="#">Shirts</a>
+                            <a href="#">Shoes</a>
+                            <a href="#">Shorts</a>
+                            <a href="#">Sweaters & Knits</a>
+                            <a href="#">T-Shirts</a>
+                            <a href="#">Tanks</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="rightProduct col-12 col-md-9 align-items-start flex-column bd-highlight">
-            <div class="row d-flex col-12 px-0">
+            <div class="row d-flex col-12 px-0 m-0">
                 <nav aria-label="breadcrumb"
                      class="col-12 col-lg-4 d-flex flex-column justify-content-center justify-content-lg-start px-0">
-                    <label class="text-center text-md-left">Trending now</label>
-                    <ol class="breadcrumb bg-transparent pl-0">
-                        <li class="breadcrumb-item"><a href="#">Bohemian</a></li>
-                        <li class="breadcrumb-item"><a href="#">Floral</a></li>
-                        <li class="breadcrumb-item"><a href="#">Lace</a></li>
-                        <li class="breadcrumb-item"><a href="#">Floral</a></li>
-                        <li class="breadcrumb-item"><a href="#">Lace</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Bohemian</li>
-                    </ol>
+                    <label class="text-center text-lg-left">Trending now</label>
+                    <div class="my-0 d-flex justify-content-center justify-content-lg-start">
+                        <ol class="breadcrumb breadCrombProd bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item"><a href="#">Bohemian</a></li>
+                            <li class="breadcrumb-item"><a href="#">Floral</a></li>
+                            <li class="breadcrumb-item"><a href="#">Lace</a></li>
+                        </ol>
+                    </div>
+                    <div class="my-0 d-flex justify-content-center justify-content-lg-start">
+                        <ol class="breadcrumb breadCrombProd bg-transparent p-0 m-0">
+                            <li class="breadcrumb-item"><a href="#">Floral</a></li>
+                            <li class="breadcrumb-item"><a href="#">Lace</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Bohemian</li>
+                        </ol>
+                    </div>
                 </nav>
-                <div class="checkSize row col-12 col-lg-4 d-flex flex-column justify-content-center justify-content-lg-start align-items-center align-items-lg-start">
-                    <div class="mb-2"><label>Size</label></div>
-                    <div class="d-flex justify-content-center">
-                        <div class="form-check form-check-inline">
+                <div class="checkSize row col-12 col-lg-4 d-flex justify-content-center justify-content-lg-start align-items-center align-items-lg-start mx-0 my-2">
+                    <div class="m-0 p-0 col-12 d-flex justify-content-center justify-content-lg-start">
+                        <label>Size</label></div>
+                    <div class="row d-flex flex-column m-0 p-0 col-3">
+                        <div class="form-check form-check-inline checkFormProd">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                             <label class="form-check-label labelSize" for="inlineCheckbox1">XXS</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline checkFormProd">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label labelSize" for="inlineCheckbox2">XS</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-                            <label class="form-check-label labelSize" for="inlineCheckbox3">S</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
-                            <label class="form-check-label labelSize" for="inlineCheckbox4">M</label>
+                            <label class="form-check-label labelSize" for="inlineCheckbox2">L</label>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <div class="form-check form-check-inline">
+                    <div class="row d-flex flex-column m-0 p-0 col-3">
+                        <div class="form-check form-check-inline checkFormProd">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                            <label class="form-check-label labelSize" for="inlineCheckbox3">XS</label>
+                        </div>
+                        <div class="form-check form-check-inline checkFormProd">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                            <label class="form-check-label labelSize" for="inlineCheckbox4">XL</label>
+                        </div>
+                    </div>
+                    <div class="row d-flex flex-column m-0 p-0 col-3">
+                        <div class="form-check form-check-inline checkFormProd">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
-                            <label class="form-check-label labelSize" for="inlineCheckbox5">L</label>
+                            <label class="form-check-label labelSize" for="inlineCheckbox5">S</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                        <div class="form-check form-check-inline checkFormProd">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
-                            <label class="form-check-label labelSize" for="inlineCheckbox6">XL</label>
+                            <label class="form-check-label labelSize" for="inlineCheckbox6">XXL</label>
                         </div>
-                        <div class="form-check form-check-inline">
+                    </div>
+                    <div class="row d-flex flex-column m-0 p-0 col-3">
+                        <div class="form-check form-check-inline checkFormProd">
                             <input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="option2">
-                            <label class="form-check-label labelSize" for="inlineCheckbox7">XXL</label>
+                            <label class="form-check-label labelSize" for="inlineCheckbox7">M</label>
                         </div>
                     </div>
                 </div>
-                <div class="price col-12 col-lg-4 d-flex flex-column justify-content-center justify-content-lg-start">
-                    <label class="d-flex flex-column justify-content-center justify-content-lg-start text-center
-                    text-md-left mt-3 mb-3 mt-lg-0 ">Price</label>
-                    <label>
-                        <input class="inpScroll" type="range" step="5" min="100" max="5000"
-                               onchange="document.getElementById('rangeValue').innerHTML = this.value;">
-                    </label>
-                    <span id="rangeValue">5</span>
+                <div class="price col-12 col-lg-4 d-flex flex-column justify-content-center justify-content-md-start">
+                    <div class="m-0 p-0 col-12 d-flex flex-column"><label
+                            class="d-flex justify-content-center justify-content-lg-start">Price</label>
+                        <div class="range-slider">
+                            <input type="text" class="js-range-slider" value="">
+                        </div>
+                        <div class="row extra-controls d-flex justify-content-between m-0">
+                            <label class="labInpProd col-2 d-flex align-items-center p-0">$
+                                <input type="text" class="js-input-from text-left" value="0">
+                            </label>
+                            <label class="labInpProd col-2 d-flex align-items-center p-0">$
+                                <input type="text" class="js-input-to text-left" value="0">
+                            </label>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="sortProd row d-flex align-items-center mb-5 px-3">
+            <div class="sortProd row d-flex align-items-center my-5 px-3">
                 <div class="input-group col-6 col-lg-3 p-0 m-0">
                     <div class="input-group-prepend">
                         <button class="btn btn-outline-secondary py-0" type="button">Sort By</button>
@@ -687,23 +767,11 @@
         </div>
     </div>
 </footer>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script>
-    const dropdown = document.getElementsByClassName("dropdown-btn");
-    let i;
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            const dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        });
-    }
-</script>
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--Plugin JavaScript file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="js/priceProd.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
