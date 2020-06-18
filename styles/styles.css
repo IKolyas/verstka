@@ -38,7 +38,10 @@
 
   .menLabelbut {
     font-size: 2rem !important;
-    color: #f15068 !important; } }
+    color: #f15068 !important; }
+
+  .prodCardHeader {
+    width: 100% !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -167,7 +170,10 @@
 
   .menLabelbut {
     font-size: 2rem !important;
-    color: #f15068 !important; } }
+    color: #f15068 !important; }
+
+  .prodCardHeader {
+    width: 100% !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -338,7 +344,10 @@
 
   .menLabelbut {
     font-size: 2rem !important;
-    color: #f15068 !important; } }
+    color: #f15068 !important; }
+
+  .prodCardHeader {
+    width: 100% !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -734,56 +743,56 @@
   text-transform: uppercase;
   color: #4d4d4d; }
 
-.sidenav a {
-  text-decoration: none;
+.prodCardHeader {
+  border-bottom: 1.0px solid #ebebeb;
+  border-left: 5px solid #ef5b70; }
+  .prodCardHeader button {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #898989; }
+    .prodCardHeader button:hover {
+      text-decoration: none;
+      color: #f15068; }
+    .prodCardHeader button:focus, .prodCardHeader button:active {
+      box-shadow: none !important;
+      text-decoration: none;
+      color: #f15068; }
+      .prodCardHeader button:focus svg, .prodCardHeader button:active svg {
+        transform: rotateZ(180deg);
+        transition-duration: 1s; }
+
+.drBtnContProd a {
   font-size: 14px;
-  margin-bottom: .5rem;
-  font-weight: 400;
-  color: #6f6e6e;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none; }
-  .sidenav a:hover {
+  line-height: 33px;
+  font-weight: 500;
+  color: #6f6e6e; }
+  .drBtnContProd a:hover {
     color: #f15068;
     text-decoration: none; }
-.sidenav .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  margin-bottom: 1.5rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 700;
-  color: #6f6e6e;
-  display: block;
-  border: none;
-  border-left: 5px solid #f15068;
-  border-bottom: 1px solid #898989;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none; }
-  .sidenav .dropdown-btn:hover {
-    color: #f15068;
-    text-decoration: none; }
-.sidenav .dropdown-container {
-  display: none;
-  background-color: #ffffff;
-  padding-left: 8px; }
-.sidenav .fa-caret-down {
-  float: right;
-  padding-right: 8px; }
 
-.breadcrumb-item::before {
-  content: "|" !important; }
-
-.inpScroll {
-  width: 260px; }
+.price {
+  font-family: Arial, sans-serif;
+  font-size: 8px; }
+  .price .range-slider {
+    position: relative; }
+  .price .irs--round {
+    top: -20px;
+    height: 30px; }
+  .price .labInpProd input {
+    border: none; }
+  .price .irs-bar {
+    background-color: #f15068 !important; }
+  .price .irs-min, .price .irs-max, .price .irs-single, .price .irs-from, .price .irs-to {
+    display: none; }
+  .price .irs-handle {
+    top: 31px !important;
+    width: 14px !important;
+    height: 14px !important;
+    border: none !important;
+    background-color: #f15068 !important; }
 
 .rightProduct label {
   font-size: 14px;
@@ -797,6 +806,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: #6f6e6e; }
+.rightProduct .inpScroll {
+  width: 260px; }
 .rightProduct input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
   border-radius: 10px;
@@ -812,29 +823,40 @@
   border-radius: 10px;
   cursor: pointer;
   margin-top: -5px; }
-.rightProduct .breadcrumb a {
+.rightProduct .breadCrombProd a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #6f6e6e; }
+.rightProduct .breadCrombProd .breadcrumb-item:not(:nth-child(1))::before {
+  content: "|" !important; }
 .rightProduct .active {
   color: #f15068; }
 
 .sortProd {
-  height: 50px;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #6f6e6e; }
+  height: 50px; }
   .sortProd .input-group {
     background-color: #ffffff;
     border: 1.0px solid #ebebeb; }
     .sortProd .input-group .input-group-prepend {
       height: 30px; }
+      .sortProd .input-group .input-group-prepend select {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e; }
+        .sortProd .input-group .input-group-prepend select:focus, .sortProd .input-group .input-group-prepend select:active, .sortProd .input-group .input-group-prepend select:hover {
+          box-shadow: none !important;
+          background-color: #ffffff !important; }
       .sortProd .input-group .input-group-prepend button {
         border: none;
-        color: #222222; }
+        color: #222222;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400; }
+        .sortProd .input-group .input-group-prepend button:focus, .sortProd .input-group .input-group-prepend button:active, .sortProd .input-group .input-group-prepend button:hover {
+          box-shadow: none !important;
+          background-color: #ffffff !important; }
     .sortProd .input-group .custom-select {
       height: 30px; }
 
@@ -878,5 +900,70 @@
     .buttBanBGProduct .buttonBannerText p {
       margin-top: .5rem;
       padding: .5rem; }
+
+.card {
+  border: none !important; }
+
+.cardCheckOut .card-header {
+  background-color: transparent !important;
+  border: none !important; }
+.cardCheckOut h2 button {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222; }
+  .cardCheckOut h2 button:hover, .cardCheckOut h2 button:active, .cardCheckOut h2 button:focus {
+    box-shadow: none;
+    text-decoration: none;
+    color: #f15068; }
+.cardCheckOut .hedThemeText {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222; }
+.cardCheckOut p, .cardCheckOut a {
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #898989; }
+.cardCheckOut a:hover {
+  text-decoration: none;
+  color: #f15068; }
+.cardCheckOut .checkButton {
+  width: 180px;
+  height: 50px;
+  border: 1.0px solid #eaeaea;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a; }
+  .cardCheckOut .checkButton:hover {
+    background-color: #f15068;
+    border: none; }
+.cardCheckOut .inpCheck {
+  width: 390px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1.0px solid #eaeaea; }
+  .cardCheckOut .inpCheck:hover, .cardCheckOut .inpCheck:active, .cardCheckOut .inpCheck:focus {
+    box-shadow: none; }
+.cardCheckOut mark {
+  background-color: transparent;
+  color: #f15068; }
+.cardCheckOut span {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ff0d0d; }
+.cardCheckOut .forgotPass {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #222222; }
 
 /*# sourceMappingURL=styles.css.map */

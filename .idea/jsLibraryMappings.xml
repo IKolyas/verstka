@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{861689887d, bootstrap, jquery-3.5.1.slim, popper.js}" />
+    <file url="PROJECT" libraries="{861689887d, bootstrap, ion-rangeslider, jquery, jquery-1.12.4, jquery-3.5.1.slim, jquery-ui, popper.js}" />
   </component>
 </project>

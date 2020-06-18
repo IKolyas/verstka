@@ -52,11 +52,13 @@
     background-color: #FFFFFF;
     position: absolute;
     top: 25px;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
     }
   }
-  .offerText{
+
+  .offerText {
     .topOfferLabel {
       font-size: 1rem;
       color: $mainTextColor;
@@ -94,7 +96,7 @@
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 6s;
 
-  animation-name: spinner;  // указываем на ключевые кадры анимации с названием "spinner"
+  animation-name: spinner; // указываем на ключевые кадры анимации с названием "spinner"
   animation-timing-function: linear; // функция синхронизации, с помощью которой будут происходить преобразования
   animation-iteration-count: infinite; // количество повторов анимации. "infinite" - значит бесконечно
   animation-duration: 6s; // длительность анимации
@@ -125,11 +127,12 @@
 
 .prodCard {
   position: relative;
-  max-width: 261px!important;
+  max-width: 261px !important;
   align-items: center;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
+
   img {
     width: 261px;
     height: 280px;
@@ -155,7 +158,8 @@
       font-weight: 700;
       text-transform: uppercase;
       color: $mainThemeColor;
-      a{
+
+      a {
         text-decoration: none;
         color: $mainThemeColor;
       }
@@ -240,7 +244,7 @@
     }
 
     img {
-      width: 80px!important;
+      width: 80px !important;
     }
   }
 }
@@ -543,45 +547,43 @@
 
 //---------------------------Product_____-----------------
 
-.sidenav {
-  a {
-    text-decoration: none;
-    font-size: 14px;
-    margin-bottom: .5rem;
-    font-weight: 400;
-    color: #6f6e6e;
-    display: block;
-    border: none;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
 
-    &:hover {
-      color: $mainThemeColor;
-      text-decoration: none;
-    }
-  }
+.prodCardHeader {
+  border-bottom: 1.0px solid #ebebeb;
+  border-left: 5px solid #ef5b70;;
 
-  .dropdown-btn {
-    padding: 6px 8px 6px 16px;
-    margin-bottom: 1.5rem;
+  button {
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 14px;
     line-height: 20px;
     font-weight: 700;
+    text-transform: uppercase;
+    color: $mainTextColorP;
+
+    &:hover {
+      text-decoration: none;
+      color: $mainThemeColor;
+    }
+
+    &:focus, &:active {
+      box-shadow: none !important;
+      text-decoration: none;
+      color: $mainThemeColor;
+
+      svg {
+        transform: rotateZ(180deg);
+        transition-duration: 1s;
+      }
+    }
+  }
+}
+
+.drBtnContProd {
+  a {
+    font-size: 14px;
+    line-height: 33px;
+    font-weight: 500;
     color: #6f6e6e;
-    display: block;
-    border: none;
-    border-left: 5px solid $mainThemeColor;
-    border-bottom: 1px solid $mainTextColorP;
-    background: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
 
     &:hover {
       color: $mainThemeColor;
@@ -589,25 +591,44 @@
     }
   }
 
-  .dropdown-container {
+}
+
+.price {
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+
+  .range-slider {
+    position: relative;
+  }
+
+  .irs--round {
+    top: -20px;
+    height: 30px;
+  }
+
+  .labInpProd {
+    input {
+      border: none;
+    }
+  }
+
+  .irs-bar {
+    background-color: $mainThemeColor !important;
+  }
+
+  .irs-min, .irs-max, .irs-single, .irs-from, .irs-to {
     display: none;
-    background-color: #ffffff;
-    padding-left: 8px;
   }
 
-  .fa-caret-down {
-    float: right;
-    padding-right: 8px;
+  .irs-handle {
+    top: 31px !important;
+    width: 14px !important;
+    height: 14px !important;
+    border: none !important;
+    background-color: $mainThemeColor !important;
   }
 }
-.breadcrumb-item::before{
-  content: "|"!important;
-}
 
-
-.inpScroll {
-  width: 260px;
-}
 
 .rightProduct {
   label {
@@ -624,6 +645,10 @@
     font-weight: 400;
     text-transform: uppercase;
     color: #6f6e6e;
+  }
+
+  .inpScroll {
+    width: 260px;
   }
 
   input[type=range]::-webkit-slider-runnable-track {
@@ -645,13 +670,18 @@
     margin-top: -5px;
   }
 
-  .breadcrumb {
+  .breadCrombProd {
     a {
       font-size: 14px;
       line-height: 26px;
       font-weight: 400;
       color: #6f6e6e;
     }
+
+    .breadcrumb-item:not(:nth-child(1))::before {
+      content: "|" !important;
+    }
+
   }
 
   .active {
@@ -663,22 +693,40 @@
 
 .sortProd {
   height: 50px;
-  background-color: #f3f3f3;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #6f6e6e;
 
   .input-group {
     background-color: #ffffff;
     border: 1.0px solid #ebebeb;
 
     .input-group-prepend {
+
       height: 30px;
-      button{
+
+      select {
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #6f6e6e;
+
+        &:focus, &:active, &:hover {
+          box-shadow: none !important;
+          background-color: #ffffff !important;
+        }
+      }
+
+      button {
         border: none;
         color: $mainTextColor;
+        font-size: 14px;
+        line-height: 26px;
+        font-weight: 400;
+
+        &:focus, &:active, &:hover {
+          box-shadow: none !important;
+          background-color: #ffffff !important;
+        }
       }
+
     }
 
     .custom-select {
@@ -745,5 +793,93 @@
       margin-top: .5rem;
       padding: .5rem;
     }
+  }
+}
+
+//-----------------------check----------------------
+
+.card {
+  border: none !important;
+}
+
+.cardCheckOut {
+  .card-header {
+    background-color: transparent !important;
+    border: none !important;
+
+  }
+
+  h2 button {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainTextColor;
+    &:hover, &:active, &:focus{
+      box-shadow: none;
+      text-decoration: none;
+      color: $mainThemeColor;
+    }
+  }
+
+  .hedThemeText {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainTextColor
+  }
+
+  p, a {
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $mainTextColorP;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $mainThemeColor;
+  }
+  .checkButton{
+    width: 180px;
+    height: 50px;
+    border: 1.0px solid #eaeaea;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    &:hover{
+      background-color: $mainThemeColor;
+      border: none;
+    }
+  }
+
+  .inpCheck{
+    width: 390px;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1.0px solid #eaeaea;
+    &:hover, &:active, &:focus{
+      box-shadow: none;
+    }
+  }
+  mark{
+    background-color: transparent;
+    color: $mainThemeColor;
+  }
+  span{
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #ff0d0d;
+  }
+  .forgotPass{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    color: $mainTextColor;
   }
 }
