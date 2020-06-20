@@ -78,9 +78,30 @@
 
 .searchBrowse button {
   border: 1.0px solid #e8e8e8;
-  border-radius: 0.0px 3.0px 3.0px 0.0px; }
+  border-radius: 0.0px 3.0px 3.0px 0.0px;
+  background-color: #f6f6f6; }
+  .searchBrowse button:hover, .searchBrowse button:active, .searchBrowse button:focus {
+    box-shadow: none !important; }
   .searchBrowse button i {
     color: #a4a4a4; }
+.searchBrowse .drMenuHeaderLeft {
+  width: 262px !important;
+  background-color: #ffffff !important;
+  border-radius: 5px !important;
+  transform: translate3d(15px, 36px, 0px) !important; }
+  .searchBrowse .drMenuHeaderLeft .drMenuHeaderLeftLinkH {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323; }
+  .searchBrowse .drMenuHeaderLeft .drMenuHeaderLeftLink {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #4f4f4f; }
 
 .rTop a {
   text-decoration: none;
@@ -302,7 +323,8 @@
     .brandAllFooter .messenge i:hover {
       color: white;
       text-decoration: none;
-      background: #f15068; }
+      background: #f15068;
+      transform: scale(1.3, 1.3); }
 
 @media (max-width: 576px) {
   .inpForm {
@@ -793,6 +815,8 @@
     height: 14px !important;
     border: none !important;
     background-color: #f15068 !important; }
+  .price .js-input-from, .price .js-input-to {
+    width: 40px !important; }
 
 .rightProduct label {
   font-size: 14px;
@@ -827,7 +851,11 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #6f6e6e; }
+  color: #6f6e6e;
+  text-decoration: none; }
+  .rightProduct .breadCrombProd a:hover {
+    text-decoration: none;
+    color: #f15068; }
 .rightProduct .breadCrombProd .breadcrumb-item:not(:nth-child(1))::before {
   content: "|" !important; }
 .rightProduct .active {

@@ -18,9 +18,34 @@
   button {
     border: 1.0px solid #e8e8e8;
     border-radius: 0.0px 3.0px 3.0px 0.0px;
+    background-color: #f6f6f6;
+    &:hover, &:active, &:focus{
+      box-shadow: none!important;
+    }
 
     i {
       color: #a4a4a4;
+    }
+  }
+  .drMenuHeaderLeft{
+    width: 262px!important;
+    background-color: #ffffff!important;
+    border-radius: 5.0px!important;
+    transform: translate3d(15px, 36px, 0px)!important;
+    .drMenuHeaderLeftLinkH{
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #232323;
+    }
+    .drMenuHeaderLeftLink{
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #4f4f4f;
     }
   }
 }

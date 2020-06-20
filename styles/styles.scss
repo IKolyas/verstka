@@ -627,6 +627,9 @@
     border: none !important;
     background-color: $mainThemeColor !important;
   }
+  .js-input-from, .js-input-to{
+    width: 40px!important;
+  }
 }
 
 
@@ -676,6 +679,11 @@
       line-height: 26px;
       font-weight: 400;
       color: #6f6e6e;
+      text-decoration: none;
+      &:hover{
+        text-decoration: none;
+        color: $mainThemeColor;
+      }
     }
 
     .breadcrumb-item:not(:nth-child(1))::before {
