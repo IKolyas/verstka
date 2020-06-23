@@ -19,20 +19,23 @@
     border: 1.0px solid #e8e8e8;
     border-radius: 0.0px 3.0px 3.0px 0.0px;
     background-color: #f6f6f6;
-    &:hover, &:active, &:focus{
-      box-shadow: none!important;
+
+    &:hover, &:active, &:focus {
+      box-shadow: none !important;
     }
 
     i {
       color: #a4a4a4;
     }
   }
-  .drMenuHeaderLeft{
-    width: 262px!important;
-    background-color: #ffffff!important;
-    border-radius: 5.0px!important;
-    transform: translate3d(15px, 36px, 0px)!important;
-    .drMenuHeaderLeftLinkH{
+
+  .drMenuHeaderLeft {
+    width: 262px !important;
+    background-color: #ffffff !important;
+    border-radius: 5.0px !important;
+    transform: translate3d(15px, 36px, 0px) !important;
+
+    .drMenuHeaderLeftLinkH {
       font-size: 14px;
       line-height: 28px;
       font-weight: 700;
@@ -40,7 +43,8 @@
       letter-spacing: 0.025em;
       color: #232323;
     }
-    .drMenuHeaderLeftLink{
+
+    .drMenuHeaderLeftLink {
       font-size: 14px;
       line-height: 26px;
       font-weight: 400;
@@ -48,7 +52,79 @@
       color: #4f4f4f;
     }
   }
+
 }
+
+.drMyAccount {
+  width: 262px !important;
+  transform: translate3d(-56px, 51px, 0px) !important;
+
+  img {
+    width: 72px;
+    height: 85px;
+  }
+
+  h3 {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainTextColor;
+  }
+
+  .stars {
+    svg {
+      font-size: 12px;
+      line-height: 1.2;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: #e4af48;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $mainThemeColor;
+  }
+
+  .dellProduct {
+    svg {
+      color: #c0c0c0 !important;
+      -webkit-transition: all 1.5s;
+      -moz-transition: all 1.5s;
+      -o-transition: all 1.5s;
+
+      &:hover {
+        color: $mainTextColor !important;
+        transform: scale(1.4, 1.4);
+      }
+    }
+  }
+}
+
+.buttMyAccount {
+  width: 225px !important;
+  height: 50px !important;
+  border: 1.0px solid #f16d7f !important;
+  font-size: 14px!important;
+  line-height: 1.2!important;
+  font-weight: 700!important;
+  text-transform: uppercase !important;
+  color: #f16d7f !important;
+  background-color: #FFFFFF !important;
+  border-radius: 0 !important;
+
+  &:hover {
+    background-color: $mainThemeColor !important;
+    color: #FFFFFF !important;
+    border-radius: 0 !important;
+
+  }
+}
+
 
 .rTop {
   a {
@@ -114,7 +190,8 @@
       color: $mainThemeColor;
     }
   }
-  button{
+
+  button {
     background-color: $mainThemeColor;
   }
 }

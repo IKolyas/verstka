@@ -87,7 +87,7 @@
 .searchBrowse .drMenuHeaderLeft {
   width: 262px !important;
   background-color: #ffffff !important;
-  border-radius: 5px !important;
+  border-radius: 5.0px !important;
   transform: translate3d(15px, 36px, 0px) !important; }
   .searchBrowse .drMenuHeaderLeft .drMenuHeaderLeftLinkH {
     font-size: 14px;
@@ -102,6 +102,55 @@
     font-weight: 400;
     letter-spacing: 0.025em;
     color: #4f4f4f; }
+
+.drMyAccount {
+  width: 262px !important;
+  transform: translate3d(-56px, 51px, 0px) !important; }
+  .drMyAccount img {
+    width: 72px;
+    height: 85px; }
+  .drMyAccount h3 {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; }
+  .drMyAccount .stars svg {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48; }
+  .drMyAccount span {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f15068; }
+  .drMyAccount .dellProduct svg {
+    color: #c0c0c0 !important;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s; }
+    .drMyAccount .dellProduct svg:hover {
+      color: #222222 !important;
+      transform: scale(1.4, 1.4); }
+
+.buttMyAccount {
+  width: 225px !important;
+  height: 50px !important;
+  border: 1.0px solid #f16d7f !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #f16d7f !important;
+  background-color: #FFFFFF !important;
+  border-radius: 0 !important; }
+  .buttMyAccount:hover {
+    background-color: #f15068 !important;
+    color: #FFFFFF !important;
+    border-radius: 0 !important; }
 
 .rTop a {
   text-decoration: none;
@@ -449,7 +498,7 @@
     -moz-transform: rotateY(-360deg);
     -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg); } }
-#spinner:hover, #spinner2:hover, #spinner3:hover, #spinner4:hover {
+.offerLink:hover #spinner, .offerLink:hover #spinner2, .offerLink:hover #spinner3, .offerLink:hover #spinner4 {
   -webkit-animation-name: spinner;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

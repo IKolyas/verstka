@@ -88,24 +88,26 @@
     transform: rotateY(-360deg);
   }
 }
+.offerLink:hover{
+  #spinner, #spinner2, #spinner3, #spinner4 {
 
-#spinner:hover, #spinner2:hover, #spinner3:hover, #spinner4:hover {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
 
-  -webkit-animation-name: spinner;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 6s;
+    animation-name: spinner; // указываем на ключевые кадры анимации с названием "spinner"
+    animation-timing-function: linear; // функция синхронизации, с помощью которой будут происходить преобразования
+    animation-iteration-count: infinite; // количество повторов анимации. "infinite" - значит бесконечно
+    animation-duration: 6s; // длительность анимации
 
-  animation-name: spinner; // указываем на ключевые кадры анимации с названием "spinner"
-  animation-timing-function: linear; // функция синхронизации, с помощью которой будут происходить преобразования
-  animation-iteration-count: infinite; // количество повторов анимации. "infinite" - значит бесконечно
-  animation-duration: 6s; // длительность анимации
-
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  transform-style: preserve-3d; // указываем что это 3D преобразование
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d; // указываем что это 3D преобразование
+  }
 }
+
 
 .FetItems {
   h2 {
