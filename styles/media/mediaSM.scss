@@ -75,8 +75,11 @@
     font-size: 2rem !important;
     color: $mainThemeColor !important;
   }
-  .prodCardHeader{
-    width: 100%!important;
+  .prodCardHeader {
+    width: 100% !important;
+  }
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px)!important;
   }
 }
 
@@ -116,8 +119,10 @@
   .prodCard {
     &:hover {
       box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
+
       .psevProdCard {
         display: flex;
+
       }
     }
   }

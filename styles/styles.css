@@ -41,7 +41,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -154,10 +157,14 @@
 
 .rTop a {
   text-decoration: none;
-  color: #222222; }
+  color: #222222;
+  -webkit-transition: all 1.1s;
+  -moz-transition: all 1.1s;
+  -o-transition: all 1.1s; }
   .rTop a:hover {
     text-decoration: none;
-    color: #222222; }
+    color: #222222;
+    transform: scale(1.3, 1.3); }
 .rTop .btn-group button {
   background-color: #ef6375; }
 
@@ -175,7 +182,10 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 1.5rem;
-  border-bottom: 4px solid #ffffff; }
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition: all 1.4s;
+  -moz-transition: all 1.4s;
+  -o-transition: all 1.4s; }
   .topNav a:hover {
     text-shadow: 2px 4px 6px #969696;
     text-decoration: none;
@@ -243,7 +253,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -418,7 +431,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
