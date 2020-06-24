@@ -116,12 +116,15 @@
   color: #f16d7f !important;
   background-color: #FFFFFF !important;
   border-radius: 0 !important;
+  -webkit-transition: all 1.1s;
+  -moz-transition: all 1.1s;
+  -o-transition: all 1.1s;
 
   &:hover {
     background-color: $mainThemeColor !important;
     color: #FFFFFF !important;
     border-radius: 0 !important;
-
+    transform: scale(1.1, 1.1)!important;
   }
 }
 
