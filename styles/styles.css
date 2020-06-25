@@ -69,6 +69,9 @@
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
       display: flex; } }
+header {
+  background-color: #FFFFFF; }
+
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;

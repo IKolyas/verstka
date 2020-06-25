@@ -1,6 +1,8 @@
 @import "variables";
 @import "media/mediaSM";
-
+header{
+  background-color: #FFFFFF;
+}
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
