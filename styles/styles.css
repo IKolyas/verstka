@@ -41,7 +41,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -62,10 +65,36 @@
   .prodCard {
     flex: none !important; } }
 @media (min-width: 768px) {
+  .topMenu li a:hover {
+    color: #E6855F; }
+
+  .submenu {
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5.0px;
+    list-style: none;
+    border: none;
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    z-index: 5;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0;
+    transition: .6s ease-in-out; }
+
+  .topMenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg); }
+
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
       display: flex; } }
+header {
+  background-color: #FFFFFF; }
+
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
@@ -87,7 +116,7 @@
 .searchBrowse .drMenuHeaderLeft {
   width: 262px !important;
   background-color: #ffffff !important;
-  border-radius: 5px !important;
+  border-radius: 5.0px !important;
   transform: translate3d(15px, 36px, 0px) !important; }
   .searchBrowse .drMenuHeaderLeft .drMenuHeaderLeftLinkH {
     font-size: 14px;
@@ -103,12 +132,69 @@
     letter-spacing: 0.025em;
     color: #4f4f4f; }
 
+.drMyAccount {
+  width: 262px !important;
+  transform: translate3d(-56px, 51px, 0px) !important; }
+  .drMyAccount img {
+    width: 72px;
+    height: 85px; }
+  .drMyAccount h3 {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; }
+  .drMyAccount .stars svg {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48; }
+  .drMyAccount span {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f15068; }
+  .drMyAccount .dellProduct svg {
+    color: #c0c0c0 !important;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -o-transition: all 1.5s; }
+    .drMyAccount .dellProduct svg:hover {
+      color: #222222 !important;
+      transform: scale(1.4, 1.4); }
+
+.buttMyAccount {
+  width: 225px !important;
+  height: 50px !important;
+  border: 1.0px solid #f16d7f !important;
+  font-size: 14px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #f16d7f !important;
+  background-color: #FFFFFF !important;
+  border-radius: 0 !important;
+  -webkit-transition: all 1.1s;
+  -moz-transition: all 1.1s;
+  -o-transition: all 1.1s; }
+  .buttMyAccount:hover {
+    background-color: #f15068 !important;
+    color: #FFFFFF !important;
+    border-radius: 0 !important;
+    transform: scale(1.1, 1.1) !important; }
+
 .rTop a {
   text-decoration: none;
-  color: #222222; }
+  color: #222222;
+  -webkit-transition: all 1.1s;
+  -moz-transition: all 1.1s;
+  -o-transition: all 1.1s; }
   .rTop a:hover {
     text-decoration: none;
-    color: #222222; }
+    color: #222222;
+    transform: scale(1.3, 1.3); }
 .rTop .btn-group button {
   background-color: #ef6375; }
 
@@ -116,7 +202,10 @@
   border-bottom: 1px solid #ececec;
   width: 100%; }
 
-.topNav a {
+.topNav .topMenu > li {
+  display: inline-block;
+  position: relative; }
+.topNav .menu__top__link {
   display: flex;
   align-items: center;
   height: 2.5rem;
@@ -126,12 +215,34 @@
   font-weight: 700;
   text-transform: uppercase;
   padding: 0 1.5rem;
-  border-bottom: 4px solid #ffffff; }
-  .topNav a:hover {
+  border-bottom: 4px solid #ffffff;
+  -webkit-transition: all 1.4s;
+  -moz-transition: all 1.4s;
+  -o-transition: all 1.4s; }
+  .topNav .menu__top__link:hover {
     text-shadow: 2px 4px 6px #969696;
     text-decoration: none;
     color: #222222;
     border-bottom: 4px solid #f15068; }
+.topNav .submenu h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323; }
+.topNav .submenu .subMenuLink {
+  text-transform: none;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #646464;
+  transition-duration: 1s; }
+  .topNav .submenu .subMenuLink:hover {
+    text-decoration: none;
+    color: #f15068;
+    text-shadow: 2px 4px 6px #969696; }
 
 .topNavMobile a {
   color: #f15068;
@@ -194,7 +305,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -215,6 +329,29 @@
   .prodCard {
     flex: none !important; } }
 @media (min-width: 768px) {
+  .topMenu li a:hover {
+    color: #E6855F; }
+
+  .submenu {
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5.0px;
+    list-style: none;
+    border: none;
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    z-index: 5;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0;
+    transition: .6s ease-in-out; }
+
+  .topMenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg); }
+
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
@@ -369,7 +506,10 @@
     color: #f15068 !important; }
 
   .prodCardHeader {
-    width: 100% !important; } }
+    width: 100% !important; }
+
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px) !important; } }
 @media (max-width: 1199px) {
   .offer > a {
     text-decoration: none;
@@ -390,6 +530,29 @@
   .prodCard {
     flex: none !important; } }
 @media (min-width: 768px) {
+  .topMenu li a:hover {
+    color: #E6855F; }
+
+  .submenu {
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5.0px;
+    list-style: none;
+    border: none;
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    z-index: 5;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0;
+    transition: .6s ease-in-out; }
+
+  .topMenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg); }
+
   .prodCard:hover {
     box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38); }
     .prodCard:hover .psevProdCard {
@@ -449,7 +612,7 @@
     -moz-transform: rotateY(-360deg);
     -ms-transform: rotateY(-360deg);
     transform: rotateY(-360deg); } }
-#spinner:hover, #spinner2:hover, #spinner3:hover, #spinner4:hover {
+.offerLink:hover #spinner, .offerLink:hover #spinner2, .offerLink:hover #spinner3, .offerLink:hover #spinner4 {
   -webkit-animation-name: spinner;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;

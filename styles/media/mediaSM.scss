@@ -75,8 +75,11 @@
     font-size: 2rem !important;
     color: $mainThemeColor !important;
   }
-  .prodCardHeader{
-    width: 100%!important;
+  .prodCardHeader {
+    width: 100% !important;
+  }
+  .drMyAccount {
+    transform: translate3d(-122px, 6px, 0px)!important;
   }
 }
 
@@ -106,6 +109,7 @@
 
 @media (min-width: 992px) {
 
+
   .prodCard {
     flex: none !important;
   }
@@ -113,11 +117,38 @@
 }
 
 @media (min-width: 768px) {
+
+  .topMenu li a:hover { color: #E6855F; }
+  .submenu {
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5.0px;
+    list-style: none;
+    border: none;
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    z-index: 5;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0;
+    transition: .6s ease-in-out;
+  }
+
+  .topMenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+
+
   .prodCard {
     &:hover {
       box-shadow: 0 19px 14px -12px rgba(0, 0, 0, 0.38);
+
       .psevProdCard {
         display: flex;
+
       }
     }
   }
