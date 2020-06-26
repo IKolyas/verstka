@@ -1,8 +1,10 @@
 @import "variables";
 @import "media/mediaSM";
-header{
+
+header {
   background-color: #FFFFFF;
 }
+
 .logo {
   background: url("../img/logo.png") no-repeat;
   text-transform: uppercase;
@@ -126,7 +128,7 @@ header{
     background-color: $mainThemeColor !important;
     color: #FFFFFF !important;
     border-radius: 0 !important;
-    transform: scale(1.1, 1.1)!important;
+    transform: scale(1.1, 1.1) !important;
   }
 }
 
@@ -159,7 +161,13 @@ header{
 }
 
 .topNav {
-  a {
+
+  .topMenu > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .menu__top__link{
     display: flex;
     align-items: center;
     height: 2.5rem;
@@ -181,6 +189,31 @@ header{
       border-bottom: 4px solid $mainThemeColor;
     }
   }
+  .submenu{
+    h3{
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: #232323;
+    }
+    .subMenuLink{
+      text-transform: none;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 28px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #646464;
+      transition-duration: 1s;
+      &:hover{
+        text-decoration: none;
+        color: $mainThemeColor;
+        text-shadow: 2px 4px 6px rgba(150, 150, 150, 1);
+      }
+    }
+  }
+
 }
 
 .topNavMobile {
