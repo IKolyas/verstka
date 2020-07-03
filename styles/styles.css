@@ -1,4 +1,4 @@
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .topMenu > li:hover .submenu {
     visibility: visible;
     opacity: 1;
@@ -260,7 +260,7 @@ header {
 .topNavMobile button {
   background-color: #f15068; }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .topMenu > li:hover .submenu {
     visibility: visible;
     opacity: 1;
@@ -443,7 +443,7 @@ header {
       background: #f15068;
       transform: scale(1.3, 1.3); }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .topMenu > li:hover .submenu {
     visibility: visible;
     opacity: 1;
