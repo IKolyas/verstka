@@ -630,6 +630,8 @@ header {
       .prodCard .psevProdCardBody p a {
         text-decoration: none;
         color: #f15068; }
+        .prodCard .psevProdCardBody p a i {
+          font-size: 1.4rem; }
   .prodCard .psevProdCard {
     display: none;
     position: absolute;
@@ -650,6 +652,8 @@ header {
       line-height: 1.2;
       font-weight: 700;
       color: #ffffff; }
+      .prodCard .psevProdCard a i {
+        font-size: 1.3rem; }
 
 .butBrowseAllProd {
   width: 212px;
