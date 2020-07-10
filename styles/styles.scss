@@ -164,6 +164,9 @@
       a {
         text-decoration: none;
         color: $mainThemeColor;
+        i{
+          font-size: 1.4rem;
+        }
       }
     }
   }
@@ -189,6 +192,9 @@
       line-height: 1.2;
       font-weight: 700;
       color: #ffffff;
+      i{
+        font-size: 1.3rem;
+      }
     }
   }
 
