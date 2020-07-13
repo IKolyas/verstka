@@ -1,0 +1,161 @@
+@media (max-width: 576px) {
+  .inpForm {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBannerContent {
+    background-size: 100% !important;
+  }
+  .menLabeltop {
+    font-size: 3rem !important;
+    color: #f15068 !important;
+  }
+  .menLabelbut {
+    font-size: 2rem !important;
+    color: #f15068 !important;
+  }
+}
+
+.futFon {
+  height: 441px;
+  background: url(../img/Layer%2041@1X.jpeg) no-repeat center 18%;
+}
+
+.futFon .futFonInfo {
+  height: 441px;
+}
+
+.futFon .photoForm {
+  font-size: 1rem;
+}
+
+.futFon .photoForm p {
+  color: #222222;
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.futFon .photoForm span {
+  color: #f15068;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.futFon .photoForm img {
+  width: 84px;
+  height: 84px;
+  border-radius: 45px;
+}
+
+.futFon .rowBut {
+  width: 40px;
+  border-bottom: 4px solid #D6D6D6;
+}
+
+.futFon .rowBut:hover {
+  border-bottom: 5px solid #f15068;
+}
+
+.futFon .rowActive {
+  border-bottom: 5px solid #f15068;
+}
+
+.formMail h2 {
+  color: #222222;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.formMail .inpForm input {
+  float: left;
+  width: 260px;
+  height: 47px;
+  border: none;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+  padding-left: 20px;
+}
+
+.formMail .inpForm .subsBTN {
+  height: 47px;
+  width: 105px;
+  background-color: #f16d7f;
+  color: #ffffff;
+  font-size: 0.9rem;
+  border: none;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.footerBut a {
+  text-decoration: none;
+  color: #898989;
+  line-height: 2.5;
+}
+
+.footerBut a:hover {
+  text-shadow: 2px 4px 6px #969696;
+  text-decoration: none;
+  color: #898989;
+}
+
+.footerBut h2 {
+  color: #f15068;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.footerBut .blockBrand {
+  text-align: justify;
+}
+
+.footerBut .blockBrand p {
+  color: #898989;
+}
+
+.brandAllFooter {
+  height: 80px;
+  background-color: #E6E6E6;
+}
+
+.brandAllFooter .brandAll {
+  color: #7A7A7A;
+}
+
+.brandAllFooter .messenge a {
+  color: #222222;
+}
+
+.brandAllFooter .messenge a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.brandAllFooter .messenge i {
+  width: 32px;
+  height: 32px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.brandAllFooter .messenge i:hover {
+  color: white;
+  text-decoration: none;
+  background: #f15068;
+}
+/*# sourceMappingURL=footer.css.map */

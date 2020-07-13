@@ -1,0 +1,110 @@
+@media (max-width: 576px) {
+  .inpForm {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .topBannerContent {
+    background-size: 100% !important;
+  }
+  .menLabeltop {
+    font-size: 3rem !important;
+    color: #f15068 !important;
+  }
+  .menLabelbut {
+    font-size: 2rem !important;
+    color: #f15068 !important;
+  }
+}
+
+.logo {
+  background: url("../../assets/images/logo.png") no-repeat;
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 4rem;
+}
+
+.logo span {
+  color: #f15068;
+  font-weight: 700;
+}
+
+.searchBrowse button {
+  border: 1.0px solid #e8e8e8;
+  border-radius: 0.0px 3.0px 3.0px 0.0px;
+}
+
+.searchBrowse button i {
+  color: #a4a4a4;
+}
+
+.rTop a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.rTop a:hover {
+  text-decoration: none;
+  color: #222222;
+}
+
+.rTop .btn-group button {
+  background-color: #ef6375;
+}
+
+.headerLine {
+  border-bottom: 1px solid #ececec;
+  width: 100%;
+}
+
+.topNav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2.5rem;
+  text-decoration: none;
+  color: #222222;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+  border-bottom: 4px solid #ffffff;
+}
+
+.topNav a:hover {
+  text-shadow: 2px 4px 6px #969696;
+  text-decoration: none;
+  color: #222222;
+  border-bottom: 4px solid #f15068;
+}
+
+.topNavMobile a {
+  color: #f15068;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+}
+
+.topNavMobile a:hover {
+  text-shadow: 2px 4px 6px rgba(150, 150, 150, 0.4);
+  text-decoration: none;
+  color: #f15068;
+}
+/*# sourceMappingURL=header.css.map */
