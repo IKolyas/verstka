@@ -78,16 +78,8 @@ function openCart() {
     let dropdownOn = document.querySelector('.drMyAccount');
     document.addEventListener('click', evt => {
         if (evt.target.classList.contains('my__cart')) {
-            if(dropdownOn.classList.contains('show')){
-                dropdownOn.classList.remove('show');
+                dropdownOn.classList.toggle('show');
             }
-            else {
-                dropdownOn.classList.add('show');
-            }
-        }
-        else {
-            dropdownOn.classList.remove('show');
-        }
     })
 }
 let open = openCart()
