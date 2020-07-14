@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper d-flex row col-12 justify-content-center align-items-center mt-4">
+        <div id="gallery" class="d-flex col-4 flex-column justify-content-center align-items-center">
+            <button id="hide">скрыть/показать</button>
+            
+            <div class="roulette">
+
+            </div>
+            <div class="list d-flex justify-content-center"> 
+                <button id="left"> <<< </button>
+                <button id="right"> >>> </button>
+            </div>
+            <img class="top__Img m-2 outline" src="https://cs8.pikabu.ru/post_img/big/2017/12/25/5/1514188160141511997.jpg" alt="img"
+                width="350px" height="280px" id="main-pic">
+        </div>
+    </div>
+    <script>
+         function listR(){
+            
+        }
+        function initNewApp(settings) { //0
+            const element = { //3
+                items: settings.items,
+                container: settings.container,
+                template: settings.template,
+                init() {
+                    this._render(); //5
+                    this._handleEvents();
+                },
+                _render() {
+                    let str = ''; //6
+                    this.items.forEach(el => { //7
+                        str += this.template(el); //7.1 ...
+                    });
+                    document.querySelector(this.container).innerHTML += str; //8
+                },
+                _handleEvents() {
+                    let main = document.querySelector('#main-pic');
+                
+                    document.addEventListener('click', evt => {
+                        if (evt.target.classList.contains('img-preview')) {
+                            main.src = evt.target.src;
+                        }
+
+                        if (evt.target.id == 'hide') {
+                            main.classList.toggle('hidden');
+                        }
+                        if (evt.target.id == 'right') {
+                            let ind = this.items.indexOf(main.src);
+                            if (ind < (this.items.length)-1) {
+                                main.src = this.items[++ind];
+                            }
+                            else {
+                                ind = -1;
+                                main.src = this.items[++ind];
+                            }
+                        }
+                        if (evt.target.id == 'left') {
+                            let ind = this.items.indexOf(main.src);
+                            if (ind > 0) {
+                                main.src = this.items[--ind];
+                            }
+                            else {
+                                ind = this.items.length;
+                                main.src = this.items[--ind];
+                            }
+                        }
+
+                    })
+                }
+            }
+            element.init(); //4
+
+            return element
+        }
+
+        let carousele = { //1
+            items: [
+                'https://cs8.pikabu.ru/post_img/big/2017/12/25/5/1514188160141511997.jpg', //el в forEach
+                'https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/HMUB2?wid=1144&hei=1144&fmt=jpeg&qlt=80&op_usm=0.5,0.5&.v=1563827752399',
+                'https://zeon18.ru/files/item/Xiaomi-Mi-Notebook-Air-4G-Officially-Announced-Weboo-co-2%20(1)_1.jpg',
+                'https://files.sandberg.it/products/images/lg/640-05_lg.jpg',
+                'https://images-na.ssl-images-amazon.com/images/I/81PLqxtrJ3L._SX466_.jpg'
+            ],
+            container: '.roulette',
+            template(el) {
+                return `<img src="${el}" width="100" height="80" class="img-preview m-1">`
+            }
+        };
+
+       
+
+        let newGallery = initNewApp(carousele); //2
+
+        // document.querySelector('#hide').addEventListener('click', evt => {}) 
+        // function createGallery() {
+        //     setTimeout(() => {
+        //         newGallery =  initNewApp(carousele);
+        //         console.log('ok')
+        //     }, 500)
+
+        // }
+
+        // function func(e) {
+        //     e.preventDefault();
+        //     console.log(e)
+        //     newGallery = createGallery();
+        // }
+
+        // document.getElementById('create').onclick = func //не пробрасываю эвент, т.к. он приходит туда сам
+        // document.getElementById('create').onclick = evt => {
+        //     evt.preventDefault();
+        //     console.log('Другая')
+        // } //не пробрасываю эвент, т.к. он приходит туда сам
+
+
+        // document.getElementById('create').addEventListener('click', func);
+        // document.getElementById('create').addEventListener('click', evt => {
+        //     console.log('Another')
+        // });
+    </script>
+
+</body>
+
+</html>
