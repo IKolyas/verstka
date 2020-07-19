@@ -152,16 +152,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      -webkit-transition: all 1.5s;
-      -moz-transition: all 1.5s;
-      -o-transition: all 1.5s;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
 
 
       &:hover {
         color: white;
         text-decoration: none;
         background: $mainThemeColor;
-        transform: scale(1.3, 1.3);
+        transform: scale(1.2, 1.2);
       }
     }
   }

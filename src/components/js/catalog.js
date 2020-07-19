@@ -80,6 +80,9 @@ function openCart() {
         if (evt.target.classList.contains('my__cart')) {
                 dropdownOn.classList.toggle('show');
             }
+        else {
+            dropdownOn.classList.remove('show');
+        }
     })
 }
 let open = openCart()
