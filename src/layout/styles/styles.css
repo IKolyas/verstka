@@ -119,38 +119,49 @@ header {
     letter-spacing: 0.025em;
     color: #4f4f4f; }
 
-.drMyAccount {
+.basket__Product {
   width: 262px !important;
   transform: translate3d(-95px, 51px, 0px) !important; }
-  .drMyAccount img {
+  .basket__Product img {
     width: 72px;
-    height: 85px; }
-  .drMyAccount h3 {
+    height: 85px;
+    object-position: center center;
+    object-fit: cover; }
+  .basket__Product .product__text h3 {
+    text-align: center;
     font-size: 12px;
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
     color: #222222; }
-  .drMyAccount .stars svg {
+  .basket__Product .product__text .stars i {
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
     text-transform: uppercase;
     color: #e4af48; }
-  .drMyAccount span {
+  .basket__Product .product__text p {
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
     text-transform: uppercase;
     color: #f15068; }
-  .drMyAccount .dellProduct svg {
-    color: #c0c0c0 !important;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s; }
-    .drMyAccount .dellProduct svg:hover {
-      color: #222222 !important;
-      transform: scale(1.2, 1.2); }
+    .basket__Product .product__text p span {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      text-transform: inherit;
+      color: inherit; }
+
+.dell__Product {
+  color: #c0c0c0;
+  transition-duration: .5s;
+  border: none;
+  background-color: #FFFFFF !important; }
+  .dell__Product:hover {
+    color: #222222 !important;
+    transform: scale(1.2, 1.2);
+    cursor: pointer; }
 
 .buttMyAccount {
   width: 225px !important;
@@ -163,14 +174,11 @@ header {
   color: #f16d7f !important;
   background-color: #FFFFFF !important;
   border-radius: 0 !important;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s; }
+  transition-duration: .5s; }
   .buttMyAccount:hover {
     background-color: #f15068 !important;
     color: #FFFFFF !important;
-    border-radius: 0 !important;
-    transform: scale(1.1, 1.1) !important; }
+    border-radius: 0 !important; }
 
 .rTop .my__cart {
   color: #222222;
@@ -205,9 +213,7 @@ header {
   text-transform: uppercase;
   padding: 0 1.5rem;
   border-bottom: 4px solid #ffffff;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s; }
+  transition-duration: .5s; }
   .topNav .menu__top__link:hover {
     text-shadow: 2px 4px 6px #969696;
     text-decoration: none;
@@ -227,7 +233,7 @@ header {
   font-weight: 400;
   letter-spacing: 0.025em;
   color: #646464;
-  transition-duration: 1s; }
+  transition-duration: .7s; }
   .topNav .submenu .subMenuLink:hover {
     text-decoration: none;
     color: #f15068;
@@ -247,7 +253,7 @@ header {
   z-index: 5;
   transform: perspective(600px) rotateX(-90deg);
   transform-origin: 0 0;
-  transition: .6s ease-in-out; }
+  transition: .5s ease-in-out; }
 
 .topNavMobile a {
   color: #f15068;
@@ -599,12 +605,13 @@ header {
     object-fit: cover; }
   .prodCard .psevProdCardBody {
     width: inherit; }
-    .prodCard .psevProdCardBody h3 {
+    .prodCard .psevProdCardBody a {
       width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
-      color: #222222; }
+      color: #222222;
+      text-decoration: none; }
     .prodCard .psevProdCardBody p {
       width: inherit;
       font-size: 1rem;
@@ -627,9 +634,10 @@ header {
     transition-duration: .7s; }
     .prodCard .psevProdCard:hover {
       background-color: rgba(58, 56, 56, 0.83); }
-    .prodCard .psevProdCard a {
+    .prodCard .psevProdCard button {
       padding: .3rem;
       display: flex;
+      background-color: rgba(58, 56, 56, 0.83);
       align-items: center;
       width: 123px;
       height: 39px;
@@ -639,7 +647,7 @@ header {
       line-height: 1.2;
       font-weight: 700;
       color: #ffffff; }
-      .prodCard .psevProdCard a i {
+      .prodCard .psevProdCard button i {
         font-size: 1.3rem; }
 
 .bBa__container .butBrowseAllProd {
@@ -753,7 +761,8 @@ header {
   text-transform: uppercase;
   font-size: 14px;
   border: 1px solid #EAEAEA;
-  font-weight: 700; }
+  font-weight: 700;
+  transition-duration: .5s; }
   .ccShoppingBut button:hover {
     background-color: #f15068;
     color: #FFFFFF;

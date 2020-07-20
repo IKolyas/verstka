@@ -115,12 +115,13 @@
   .psevProdCardBody {
     width: inherit;
 
-    h3 {
+    a {
       width: inherit;
       font-size: 1rem;
       font-weight: 700;
       text-transform: uppercase;
       color: $mainTextColor;
+      text-decoration: none;
     }
 
     p {
@@ -153,9 +154,10 @@
       background-color: rgba(58, 56, 56, 0.83);
     }
 
-    a {
+    button {
       padding: .3rem;
       display: flex;
+      background-color: rgba(58, 56, 56, 0.83);
       align-items: center;
       width: 123px;
       height: 39px;
@@ -339,6 +341,7 @@
     font-size: 14px;
     border: 1px solid #EAEAEA;
     font-weight: 700;
+    transition-duration: .5s;
 
     &:hover {
       background-color: $mainThemeColor;
