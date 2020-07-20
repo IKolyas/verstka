@@ -35,6 +35,7 @@ var basket = {
                         </div>
                         <button name="remove" class="dell__Product fa fa-times-circle" data-id="${item.id}" aria-hidden="true"></button>
                     </div>
+                    <div class="dropdown-divider mx-3"></div>
             `
         })
         this.container.innerHTML = str;
