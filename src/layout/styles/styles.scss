@@ -5,6 +5,7 @@
 
 //---------------------index-------------------------------
 
+
 .topBanner {
   height: 615px;
   background: #e8e8e8;
@@ -42,6 +43,24 @@
   }
 }
 
+@keyframes animatedBackground {
+  0% {
+    background-position: right 8% top;
+  }
+  50%{
+    background-position: right 20% top 20%;
+  }
+  100% {
+    background-position: right 8% top;
+  }
+}
+#fon{
+  width:100%;
+  animation: animatedBackground 15s linear infinite;
+  -moz-animation: animatedBackground 15s linear infinite;
+  -webkit-animation: animatedBackground 15s linear infinite;
+  -o-animation: animatedBackground 15s linear infinite;
+}
 
 .offer {
   position: relative;
@@ -130,13 +149,16 @@
       font-weight: 700;
       text-transform: uppercase;
       color: $mainThemeColor;
-
-      a {
-        text-decoration: none;
+    }
+    button{
+      border: none;
+      background-color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: 400;
+      color: $mainThemeColor;
+      i{
         color: $mainThemeColor;
-        i{
-          font-size: 1.4rem;
-        }
+        font-size: 2rem;
       }
     }
   }

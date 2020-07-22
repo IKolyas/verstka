@@ -50,15 +50,10 @@
             <button><i class="fas fa-search"></i></button>
         </div>
         <div class="rTop d-none d-sm-flex col-lg-3 ml-lg-auto justify-content-center justify-content-lg-end p-0 align-items-center">
-            <i class="fa fa-shopping-cart my__cart" aria-hidden="true"></i>
-            <div class="btn-group">
-                <button type="button" class="btn btn-danger ml-4">My Account</button>
-                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="sr-only">Toggle Dropdown</span>
-                </button>
-                <div class="dropdown-menu basket__Product">
-                    <div id="basket">
+            <div class="basket__block">
+                <i class="fa fa-shopping-cart my__cart" aria-hidden="true"></i>
+                <div class="basket__Product">
+                    <div id="basket" class="py-2">
 
                     </div>
                     <div class="row mx-3 d-flex justify-content-between mt-2"><span>TOTAL</span> <span class="prod_sum">$500.00</span>
@@ -68,6 +63,14 @@
                            role="button" aria-pressed="true">Go to cart</a>
                     </div>
                 </div>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger ml-4">My Account</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+
             </div>
         </div>
     </div>
@@ -127,8 +130,7 @@
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-light p-4 d-flex flex-column justify-content-center">
                 <a href="index.html">Home</a> <a href="product.html">Man</a> <a href="#">Women</a> <a href="#">Kids</a>
-                <a
-                        href="#">Accoseriese</a>
+                <a href="#">Accoseriese</a>
                 <a href="#">Featured</a> <a href="singlePage.html">Hot Deals</a>
             </div>
         </div>
@@ -139,13 +141,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="rTop d-flex justify-content-center justify-content-lg-start">
-                <a href="shoppingCart.html">
-                    <svg class="bi bi-cart2" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                    </svg>
-                </a>
+                <a href="shoppingCart.html" class="fa fa-shopping-cart my__cart px-2" aria-hidden="true"></a>
                 <div class="btn-group btnNonSSM">
                     <button type="button" class="btn btn-danger">My Account</button>
                     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
@@ -250,13 +246,14 @@
         <div class="news row flex-column flex-sm-row container justify-content-between  align-items-center pt-5 pb-5">
             <div class="newsAr">
                 <h2>news arrivals</h2></div>
-            <nav class="newsNav"><a class="newsNavlink" href="index.html">Home</a> / <a class="newsNavlink"
-                                                                                        href="#">Men</a> / <a
-                    class="newsNavlink newsNavLinkActive" href="#">news arrivals</a></nav>
+            <nav class="newsNav">
+                <a class="newsNavlink" href="index.html">Home</a> /
+                <a class="newsNavlink" href="#">Men</a> /
+                <a class="newsNavlink newsNavLinkActive" href="#">news arrivals</a>
+            </nav>
         </div>
     </div>
 </div>
-
 <main class="container my-5">
     <div class="row">
         <div class="leftMenu col-12 col-md-3 d-flex flex-column ">

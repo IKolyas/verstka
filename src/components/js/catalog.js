@@ -38,7 +38,7 @@ const catalog = {
     _handleActions() {
         if (this.container){
             this.container.addEventListener('click', evt => {
-                if (evt.target.name == 'add') {
+                if (evt.target.name === 'add') {
                     let item = {
                         name: evt.target.dataset.name,
                         price: +evt.target.dataset.price,
@@ -48,6 +48,7 @@ const catalog = {
                     }
                     this.basket.add(item);
                 }
+
             })
         }
     },
@@ -68,15 +69,18 @@ const catalog = {
                         <img src="${item.img}" class="card-img-top" alt="...">
                         <div class="psevProdCardBody card-body d-flex flex-column align-content-start pb-0 px-0">
                             <a href="#" class="card-text px-3">${item.name}</a>
-                            <p class="d-flex justify-content-between px-3">$${item.price}
-                            <a href="#"
+                            <div class="d-flex justify-content-between align-items-center">
+                            <p class="d-flex justify-content-between px-3">$${item.price}</p>
+                           <button class="d-flex d-md-none justify-content-around"
                             name="add"
                             data-name="${item.name}"
                             data-img="${item.img}"
                             data-price="${item.price}"
-                            data-id="${item.id}"
-                            ><span class="psevAdd d-md-none">
-                            <i class="fas fa-cart-plus"></i></span></a></p>
+                            data-id="${item.id}">
+                            Add to Cart
+                            <i class="fas fa-cart-plus pl-2"></i>
+                            </button>
+                            </div>
                         </div>
                     </div> `
         });
@@ -99,7 +103,7 @@ function openCart() {
     let dropdownOn = document.querySelector('.basket__Product');
     document.addEventListener('click', evt => {
         if (evt.target.classList.contains('my__cart')) {
-                dropdownOn.classList.toggle('show');
+                dropdownOn.classList.toggle('open__basket');
             }
 
     })
