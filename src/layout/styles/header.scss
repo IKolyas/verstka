@@ -65,55 +65,7 @@ header {
 
 }
 
-.basket__Product {
-  width: 262px !important;
-  transform: translate3d(-95px, 51px, 0px) !important;
 
-  img {
-    width: 72px;
-    height: 85px;
-    object-position: center center;
-    object-fit: cover;
-  }
-  .product__text {
-
-    h3 {
-      text-align: center;
-      font-size: 12px;
-      line-height: 1.2;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: $mainTextColor;
-    }
-
-    .stars {
-      i {
-        font-size: 12px;
-        line-height: 1.2;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #e4af48;
-      }
-    }
-
-    p {
-      font-size: 12px;
-      line-height: 1.2;
-      font-weight: 400;
-      text-transform: uppercase;
-      color: $mainThemeColor;
-      span{
-        font-size: inherit;
-        line-height: inherit;
-        font-weight: inherit;
-        text-transform: inherit;
-        color: inherit;
-      }
-    }
-  }
-
-
-}
 .dell__Product {
   color: #c0c0c0;
   transition-duration: .5s;
@@ -148,19 +100,81 @@ header {
 
 
 .rTop {
-  .my__cart {
-    color: $mainTextColor;
-    font-size: 1.7rem;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -o-transition: all .8s;
+  .basket__block{
+    position: relative;
+    .my__cart {
+      color: $mainThemeColor;
+      font-size: 1.7rem;
+      transition-duration: .5s;
 
-    &:hover {
-      text-decoration: none;
-      color: $mainTextColor;
-      transform: scale(1.1, 1.1);
+      &:hover {
+        text-decoration: none;
+        color: $mainThemeColor;
+        transform: scale(1.2, 1.2);
+      }
     }
-  }
+    .basket__Product {
+      position: absolute;
+      width: 262px !important;
+      background-color: #FFFFFF;
+      border: 1px solid $mainTextColorP;
+      left: -93px;
+      top: -800px;
+      z-index: 100;
+      opacity: 0;
+      transform: rotate3d(1, 1,0, 180deg);
+      transition-duration: .6s;
+
+    }
+    .open__basket{
+      top: 63px;
+      transform: rotate3d(0, 0,0, 0deg);
+      opacity: 1;
+    }
+
+      img {
+        width: 72px;
+        height: 85px;
+        object-position: center center;
+        object-fit: cover;
+      }
+      .product__text {
+
+        h3 {
+          text-align: center;
+          font-size: 12px;
+          line-height: 1.2;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: $mainTextColor;
+        }
+
+        .stars {
+          i {
+            font-size: 12px;
+            line-height: 1.2;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #e4af48;
+          }
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 1.2;
+          font-weight: 400;
+          text-transform: uppercase;
+          color: $mainThemeColor;
+          span{
+            font-size: inherit;
+            line-height: inherit;
+            font-weight: inherit;
+            text-transform: inherit;
+            color: inherit;
+          }
+        }
+      }
+    }
 
   .btn-group {
     button {

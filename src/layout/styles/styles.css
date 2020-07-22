@@ -119,40 +119,6 @@ header {
     letter-spacing: 0.025em;
     color: #4f4f4f; }
 
-.basket__Product {
-  width: 262px !important;
-  transform: translate3d(-95px, 51px, 0px) !important; }
-  .basket__Product img {
-    width: 72px;
-    height: 85px;
-    object-position: center center;
-    object-fit: cover; }
-  .basket__Product .product__text h3 {
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #222222; }
-  .basket__Product .product__text .stars i {
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #e4af48; }
-  .basket__Product .product__text p {
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: #f15068; }
-    .basket__Product .product__text p span {
-      font-size: inherit;
-      line-height: inherit;
-      font-weight: inherit;
-      text-transform: inherit;
-      color: inherit; }
-
 .dell__Product {
   color: #c0c0c0;
   transition-duration: .5s;
@@ -180,16 +146,61 @@ header {
     color: #FFFFFF !important;
     border-radius: 0 !important; }
 
-.rTop .my__cart {
-  color: #222222;
-  font-size: 1.7rem;
-  -webkit-transition: all .8s;
-  -moz-transition: all .8s;
-  -o-transition: all .8s; }
-  .rTop .my__cart:hover {
-    text-decoration: none;
-    color: #222222;
-    transform: scale(1.1, 1.1); }
+.rTop .basket__block {
+  position: relative; }
+  .rTop .basket__block .my__cart {
+    color: #f15068;
+    font-size: 1.7rem;
+    transition-duration: .5s; }
+    .rTop .basket__block .my__cart:hover {
+      text-decoration: none;
+      color: #f15068;
+      transform: scale(1.2, 1.2); }
+  .rTop .basket__block .basket__Product {
+    position: absolute;
+    width: 262px !important;
+    background-color: #FFFFFF;
+    border: 1px solid #898989;
+    left: -93px;
+    top: -800px;
+    z-index: 100;
+    opacity: 0;
+    transform: rotate3d(1, 1, 0, 180deg);
+    transition-duration: .6s; }
+  .rTop .basket__block .open__basket {
+    top: 63px;
+    transform: rotate3d(0, 0, 0, 0deg);
+    opacity: 1; }
+  .rTop .basket__block img {
+    width: 72px;
+    height: 85px;
+    object-position: center center;
+    object-fit: cover; }
+  .rTop .basket__block .product__text h3 {
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; }
+  .rTop .basket__block .product__text .stars i {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #e4af48; }
+  .rTop .basket__block .product__text p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f15068; }
+    .rTop .basket__block .product__text p span {
+      font-size: inherit;
+      line-height: inherit;
+      font-weight: inherit;
+      text-transform: inherit;
+      color: inherit; }
 .rTop .btn-group button {
   background-color: #ef6375; }
 .rTop .btn-group .dropdown-menu {
@@ -557,6 +568,20 @@ header {
         .topBanner .topBannerContent .menLabel .menLabelbut .menLabelbut span {
           color: #f15068; }
 
+@keyframes animatedBackground {
+  0% {
+    background-position: right 8% top; }
+  50% {
+    background-position: right 20% top 20%; }
+  100% {
+    background-position: right 8% top; } }
+#fon {
+  width: 100%;
+  animation: animatedBackground 15s linear infinite;
+  -moz-animation: animatedBackground 15s linear infinite;
+  -webkit-animation: animatedBackground 15s linear infinite;
+  -o-animation: animatedBackground 15s linear infinite; }
+
 .offer {
   position: relative; }
   .offer > a {
@@ -618,11 +643,15 @@ header {
       font-weight: 700;
       text-transform: uppercase;
       color: #f15068; }
-      .prodCard .psevProdCardBody p a {
-        text-decoration: none;
-        color: #f15068; }
-        .prodCard .psevProdCardBody p a i {
-          font-size: 1.4rem; }
+    .prodCard .psevProdCardBody button {
+      border: none;
+      background-color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #f15068; }
+      .prodCard .psevProdCardBody button i {
+        color: #f15068;
+        font-size: 2rem; }
   .prodCard .psevProdCard {
     display: none;
     position: absolute;
