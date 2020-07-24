@@ -14,7 +14,8 @@
     background-blend-mode: overlay; }
 
   .basket__Product {
-    left: -35px !important; } }
+    left: -35px !important;
+    top: 50px !important; } }
 @media (min-width: 992px) {
   .RiFutFon {
     border-left: 1px solid #e3e3e3; } }
@@ -304,7 +305,8 @@ header {
     background-blend-mode: overlay; }
 
   .basket__Product {
-    left: -35px !important; } }
+    left: -35px !important;
+    top: 50px !important; } }
 @media (min-width: 992px) {
   .RiFutFon {
     border-left: 1px solid #e3e3e3; } }
@@ -490,7 +492,8 @@ header {
     background-blend-mode: overlay; }
 
   .basket__Product {
-    left: -35px !important; } }
+    left: -35px !important;
+    top: 50px !important; } }
 @media (min-width: 992px) {
   .RiFutFon {
     border-left: 1px solid #e3e3e3; } }
