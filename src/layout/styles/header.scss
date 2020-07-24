@@ -113,26 +113,30 @@ header {
         transform: scale(1.2, 1.2);
       }
     }
+
     .basket__Product {
       position: absolute;
       width: 262px !important;
       background-color: #FFFFFF;
       border: 1px solid $mainTextColorP;
-      left: -93px;
-      top: -800px;
+      left: -66px;
+      top: 63px;
       z-index: 100;
       opacity: 0;
-      transform: rotate3d(1, 1,0, 180deg);
-      transition-duration: .6s;
+      transform: perspective(600px) rotateX(-90deg);
+      transform-origin: 0 0;
+      transition: .4s ease-in-out;
 
     }
     .open__basket{
+
       top: 63px;
       transform: rotate3d(0, 0,0, 0deg);
       opacity: 1;
     }
 
-      img {
+
+    img {
         width: 72px;
         height: 85px;
         object-position: center center;
@@ -219,6 +223,20 @@ header {
     }
   }
   .submenu{
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5.0px;
+    list-style: none;
+    border: none;
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    z-index: 5;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0 0;
+    transition: .4s ease-in-out;
+
     h3{
       font-size: 14px;
       font-weight: 700;
@@ -242,24 +260,11 @@ header {
         text-shadow: 2px 4px 6px rgba(150, 150, 150, 1);
       }
     }
+
   }
 
   .topMenu li a:hover { color: #E6855F; }
-  .submenu {
-    width: 846px;
-    height: 310px;
-    background-color: #ffffff;
-    border-radius: 5.0px;
-    list-style: none;
-    border: none;
-    position: absolute;
-    left: -100px;
-    opacity: 0;
-    z-index: 5;
-    transform: perspective(600px) rotateX(-90deg);
-    transform-origin: 0 0;
-    transition: .5s ease-in-out;
-  }
+
 
 
 }
