@@ -13,7 +13,7 @@
   .topBannerContent {
     height: inherit;
     background-size: 48%;
-    background: url(../../assets/images/topHeaderBack.png) no-repeat right 8% top, #e8e8e8;
+    background: url("https://raw.githubusercontent.com/IKolyas/verstka/master/src/assets/images/topHeaderBack.png") no-repeat right 8% top, #e8e8e8;
 
 
     .menLabel {
@@ -217,7 +217,7 @@
 
 .buttBanBG {
   background-color: #222224;
-  background-image: url(../../assets/images/banner.jpeg);
+  background-image: url("https://raw.githubusercontent.com/IKolyas/verstka/master/src/assets/images/banner.jpeg");
   background-repeat: no-repeat;
 
   .buttonBannerOffer {
